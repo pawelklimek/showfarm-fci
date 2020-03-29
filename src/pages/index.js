@@ -1,4 +1,13 @@
 import React from "react"
-import MenuWrapper from "../components/menu/"
+import Menu from "../components/menu/menu"
 
-export default () => <div>HEJ</div>
+const IndexPage = () => {
+  return (
+    <div>
+      <Menu></Menu>
+      INDEX
+    </div>
+  )
+}
+
+export default IndexPage
