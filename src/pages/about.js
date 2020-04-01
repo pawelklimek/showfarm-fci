@@ -1,15 +1,12 @@
 import React from "react"
-import Menu from "../components/menu/menu"
-
+import Layout from "../components/layout"
 
 const AboutPage = () => {
-    return (
-      <div>
-        <Menu></Menu>
-         O  Nas
-      </div>
-    )
-  }
-  
-  export default AboutPage
-  
+  return (
+    <div>
+      <Layout></Layout>
+    </div>
+  )
+}
+
+export default AboutPage

@@ -1,11 +1,12 @@
 import React from "react"
-import Menu from "../components/menu/menu"
+import Layout from "../components/layout"
 
 const IndexPage = () => {
   return (
     <div>
-      <Menu></Menu>
-      INDEX
+      <Layout>
+        
+      </Layout>
     </div>
   )
 }

@@ -1,15 +1,12 @@
 import React from "react"
-import Menu from "../components/menu/menu"
-
+import Layout from "../components/layout"
 
 const ContactPage = () => {
-    return (
-      <div>
-        <Menu></Menu>
-        ContactPage
-      </div>
-    )
-  }
-  
-  export default ContactPage
-  
+  return (
+    <div>
+      <Layout></Layout>
+    </div>
+  )
+}
+
+export default ContactPage

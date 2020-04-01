@@ -1,14 +1,12 @@
 import React from "react"
-import Menu from "../components/menu/menu"
+import Layout from "../components/layout"
 
 const PuppiesPage = () => {
-    return (
-      <div>
-        <Menu></Menu>
-        Szczeniak
-      </div>
-    )
-  }
-  
-  export default PuppiesPage
-  
+  return (
+    <div>
+      <Layout></Layout>
+    </div>
+  )
+}
+
+export default PuppiesPage

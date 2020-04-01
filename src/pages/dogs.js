@@ -1,14 +1,12 @@
 import React from "react"
-import Menu from "../components/menu/menu"
+import Layout from "../components/layout"
 
 const DogsPage = () => {
-    return (
-      <div>
-        <Menu></Menu>
-        Psy
-      </div>
-    )
-  }
-  
-  export default DogsPage
-  
+  return (
+    <div>
+      <Layout></Layout>
+    </div>
+  )
+}
+
+export default DogsPage

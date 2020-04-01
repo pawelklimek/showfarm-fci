@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Menu = () => {
   return (
-    <div>
+    <div class>
       <Link to="/">Showfarm</Link>
       <Link to="/dogs">Psy</Link>
       <Link to="/puppies">Szczeniaki</Link>
