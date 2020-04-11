@@ -1,0 +1,10 @@
+.layout {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
