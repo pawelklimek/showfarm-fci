@@ -4,7 +4,7 @@ import "./footer.scss"
 const Footer = () => {
     return (
         <footer className="footer">
-            Crated by Paweł Klimek, © 2020
+            Created by Paweł Klimek, © 2020
         </footer>
     )
 };

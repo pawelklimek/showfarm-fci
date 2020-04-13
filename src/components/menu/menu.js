@@ -5,11 +5,11 @@ import "./menu.scss"
 const Menu = () => {
     return (
         <div className="menu">
-            <Link className="menu-item" to="/">Showfarm</Link>
-            <Link className="menu-item" to="/dogs">Psy</Link>
-            <Link className="menu-item" to="/puppies">Szczeniaki</Link>
-            <Link className="menu-item" to="/about">O Nas</Link>
-            <Link className="menu-item" to="/contact">Kontakt</Link>
+            <Link className="menu-item" activeClassName="menu-item-active" to="/">Showfarm FCI</Link>
+            <Link className="menu-item" activeClassName="menu-item-active" to="/dogs">Psy</Link>
+            <Link className="menu-item" activeClassName="menu-item-active" to="/puppies">Szczeniaki</Link>
+            <Link className="menu-item" activeClassName="menu-item-active" to="/about">O Nas</Link>
+            <Link className="menu-item" activeClassName="menu-item-active" to="/contact">Kontakt</Link>
         </div>
     )
 };

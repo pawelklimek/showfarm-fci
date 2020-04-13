@@ -6,7 +6,7 @@ import './layout.scss'
 
 const Layout = props => {
     return (
-        <div className="wrapper" >
+        <div className="layout-wrapper">
             <Menu></Menu>
             <div className="layout">{props.children}</div>
             <Footer></Footer>
