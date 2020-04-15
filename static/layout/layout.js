@@ -1,27 +1,39 @@
 import React from "react"
-import { theme } from "./theme"
-import styled from "styled-components"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
+import styled, {createGlobalStyle, ThemeProvider} from "styled-components"
+import {theme} from "./theme";
+import Menu from "../../src/components/menu/menu";
+import Footer from "../../src/components/footer/footer";
 
 const GlobalStyle = createGlobalStyle`
   body {
   padding: 0;
   margin: 0;
   overflow:hidden;
-  font-family: "Montserrat", serif;
-  color: ${({ theme }) => theme.colors.black} 
-  background: ${({ theme }) => theme.colors.white} 
-  }`
-const Div = styled.div`
-  height: 100vh;
-`
+  font-family: "Montserrat";
+  font-weight: ${theme.font.thin};
+  }`;
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <>
-      <GlobalStyle />
-      <Div>{children}</Div>
-    </>
-  </ThemeProvider>
-)
-export default Layout
+const LayoutWrapper = styled.div`
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const Content = styled.div`
+  flex-grow: 1;
+  overflow-y: auto;
+`;
+
+const Layout = ({children}) => (
+    <ThemeProvider theme={theme}>
+        <LayoutWrapper>
+            <GlobalStyle/>
+            <Menu/>
+            <Content>{children}</Content>
+            <Footer/>
+        </LayoutWrapper>
+    </ThemeProvider>
+);
+
+export default Layout;

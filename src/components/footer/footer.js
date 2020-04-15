@@ -1,11 +1,22 @@
 import React from 'React';
-import "./footer.scss"
+import styled from "styled-components";
+import {theme} from "../../../static/layout/theme";
+
+const FooterStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+
+  font-weight: 200;
+  font-size: 0.8rem;
+  background-color: ${theme.colors.lightGray};
+  color: ${theme.colors.darkGray};
+`;
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            Created by Paweł Klimek, © 2020
-        </footer>
+        <FooterStyle>Created by Paweł Klimek, © 2020</FooterStyle>
     )
 };
 

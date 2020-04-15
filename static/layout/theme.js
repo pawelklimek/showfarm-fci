@@ -1,14 +1,16 @@
-import { colors } from "./colors"
+export const colors = {
+    darkGold: '#b29a36',
+    lightGray:  '#f2f2f2',
+    darkGray: '#474448'
+};
 
 export const theme = {
-  colors,
-  font: {
-    extraThin: 200,
-    thin: 300,
-    regular: 400,
-    bold: 800,
-  },
-  media: {
-    tablet: "@media (max-width: 1420px)",
-  },
-}
+    colors,
+    font: {
+        thin: 100,
+        regular: 300
+    },
+    media: {
+        tablet: '@media (min-width: 768px)'
+    }
+};
