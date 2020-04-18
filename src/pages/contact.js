@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components";
-import contactBlack from "./../../static/images/contact/contactBlack.jpg"
-import Separator from "./../components/separator/separator"
-import Layout from "../../static/layout/layout";
+import contactBlack from "static/images/contact/contactBlack.jpg"
+import Separator from "src/components/separator/separator"
+import Layout from "static/layout/layout";
 
 const Background = styled.div`
   display: flex;

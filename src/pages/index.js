@@ -1,30 +1,35 @@
 import React from "react"
-import Layout from "../../static/layout/layout"
+import Layout from "static/layout/layout"
 import styled from "styled-components";
-import titleImg from "./../../static/images/showfarm/showfarm-title.jpg"
-import bigImg from "./../../static/images/showfarm/big-img.jpg"
-import certificationFCI from "./../../static/images/showfarm/FCI.png"
-import certificationZK from "./../../static/images/showfarm/ZK.png"
-
-import "./index.scss"
-import {theme} from "../../static/layout/theme";
+import titleImg from "static/images/showfarm/showfarm-title.jpg"
+import bigImg from "static/images/showfarm/big-img.jpg"
+import certificationFCI from "static/images/showfarm/FCI.png"
+import certificationZK from "static/images/showfarm/ZK.png"
+import {theme} from "static/layout/theme";
 
 const HeaderImage = styled.div`
   background-image: url(${titleImg});
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 50%;
+  
+  ${theme.media.desktop} {
+    background-position: center;
+  }
 `;
+
 const PageContent = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
 `;
+
 const ImageWrapper = styled.div`
   flex: 1;
 `;
+
 const BigImage = styled.div`
   margin: 2rem 1rem 2rem 2rem;
   position: relative;
@@ -34,14 +39,15 @@ const BigImage = styled.div`
   background-position: top;
   height: 30rem;
 `;
+
 const Content = styled.div`  
   margin: 2rem 2rem 2rem 1rem;
   flex: 1;
   height: 20rem;
-  width: 20px;
   display: flex;
   flex-direction: column;
   align-self: self-start;`;
+
 const Title = styled.div`
   padding: 2rem;
   display: flex;
@@ -51,24 +57,29 @@ const Title = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const MainTitle = styled.div`
-   color: ${theme.colors.darkGold};
-   font-size: 2rem;
+  color: ${theme.colors.darkGold};
+  font-size: 2rem;
 `;
+
 const SubTitle = styled.div`
-   color: ${theme.colors.darkGold};
+  color: ${theme.colors.darkGold};
 `;
+
 const Description = styled.div`
   padding: 1rem;
   font-weight: 100;
   text-align: center;
 `;
+
 const CertificationLogoWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
   height:10rem;
 `;
+
 const CertificationLogo = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: 40%;
