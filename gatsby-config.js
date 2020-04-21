@@ -4,6 +4,7 @@ module.exports = {
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-styled-components`,
+        `gatsby-plugin-smoothscroll`,
         {
             resolve: 'gatsby-plugin-root-import',
             options: {

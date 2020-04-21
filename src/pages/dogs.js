@@ -5,6 +5,7 @@ import Title from "src/components/title/title";
 import MainImage from "src/components/main-image/main-image";
 import DogCard from "src/components/dog-card/dog-card";
 import {Dogs} from "static/dogs";
+import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 
 const DogsPage = () => {
     return (
@@ -12,60 +13,72 @@ const DogsPage = () => {
             <Layout>
                 <MainImage imgUrl={Image}/>
                 <Title title={"Psy"}/>
+                <DogScrollNavi/>
+                <div id='joy'/>
                 <DogCard
                     name={Dogs.Joy.name}
                     fullName={Dogs.Joy.fullName}
                     description={Dogs.Joy.description}
                     topImage={Dogs.Joy.topImage}
-                    bottomImage={Dogs.Joy.bottomImg}/>
+                    bottomImage={Dogs.Joy.bottomImg}>
+                </DogCard>
+                <div id='dora'/>
                 <DogCard
                     name={Dogs.Dora.name}
                     fullName={Dogs.Dora.fullName}
                     description={Dogs.Dora.description}
                     topImage={Dogs.Dora.topImage}
                     bottomImage={Dogs.Dora.bottomImg}/>
+                <div id='maizy'/>
                 <DogCard
                     name={Dogs.Maizy.name}
                     fullName={Dogs.Maizy.fullName}
                     description={Dogs.Maizy.description}
                     topImage={Dogs.Maizy.topImage}
                     bottomImage={Dogs.Maizy.bottomImg}/>
+                <div id='mora'/>
                 <DogCard
                     name={Dogs.Mora.name}
                     fullName={Dogs.Mora.fullName}
                     description={Dogs.Mora.description}
                     topImage={Dogs.Mora.topImage}
                     bottomImage={Dogs.Mora.bottomImg}/>
+                <div id='abi'/>
                 <DogCard
                     name={Dogs.Abi.name}
                     fullName={Dogs.Abi.fullName}
                     description={Dogs.Abi.description}
                     topImage={Dogs.Abi.topImage}
                     bottomImage={Dogs.Abi.bottomImg}/>
+                <div id='jaga'/>
                 <DogCard
                     name={Dogs.Jaga.name}
                     fullName={Dogs.Jaga.fullName}
                     description={Dogs.Jaga.description}
                     topImage={Dogs.Jaga.topImage}
                     bottomImage={Dogs.Jaga.bottomImg}/>
+                <div id='dagota'/>
                 <DogCard
                     name={Dogs.Dakota.name}
                     fullName={Dogs.Dakota.fullName}
                     description={Dogs.Dakota.description}
                     topImage={Dogs.Dakota.topImage}
                     bottomImage={Dogs.Dakota.bottomImg}/>
+                <selector id="Ruby"/>
+                <div id='ruby'/>
                 <DogCard
                     name={Dogs.Ruby.name}
                     fullName={Dogs.Ruby.fullName}
                     description={Dogs.Ruby.description}
                     topImage={Dogs.Ruby.topImage}
                     bottomImage={Dogs.Ruby.bottomImg}/>
+                <div id='brag'/>
                 <DogCard
-                    name={Dogs.Breg.name}
-                    fullName={Dogs.Breg.fullName}
-                    description={Dogs.Breg.description}
-                    topImage={Dogs.Breg.topImage}
-                    bottomImage={Dogs.Breg.bottomImg}/>
+                    name={Dogs.Brag.name}
+                    fullName={Dogs.Brag.fullName}
+                    description={Dogs.Brag.description}
+                    topImage={Dogs.Brag.topImage}
+                    bottomImage={Dogs.Brag.bottomImg}/>
             </Layout>
         </div>
     )

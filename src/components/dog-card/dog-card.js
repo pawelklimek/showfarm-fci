@@ -5,7 +5,7 @@ import {theme} from "static/layout/theme";
 
 const DogCardWrapper = styled.div`  
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -16,6 +16,7 @@ const DogCardStyle = styled.div`
   height: 90vh;
   margin: 1rem;
 `;
+
 const Top = styled.div`  
   flex: 2;
   display: flex;
@@ -41,7 +42,6 @@ const FullName = styled.div`
 
 const CardImg = styled.div`  
   flex: 0 0 50%;
-
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
@@ -62,7 +62,6 @@ const BottomText = styled.div`
   align-items: center;
   white-space: pre-wrap;
 `;
-
 
 const DogCard = (props) => {
     return (

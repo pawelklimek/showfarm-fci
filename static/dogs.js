@@ -162,7 +162,7 @@ export const Dogs = {
         topImage: Dora1,
         bottomImg: Dora2
     },
-    Breg: {
+    Brag: {
         name: 'BRAG',
         fullName: 'Jr.Ch.Pl, Ch.Pl , Ch.Md, Grand Ch.Md Sunnyrains European Showmance "Brag"\n' +
             '(Ch. Snowbelt\'s All American Boy X Ch. Sunnyrains In It To Win It) \n' +
