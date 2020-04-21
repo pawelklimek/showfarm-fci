@@ -1,6 +1,6 @@
 import React from 'React';
 import styled from "styled-components";
-import {theme} from "layout/theme";
+import {theme} from "static/layout/theme";
 
 const HeaderImage = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
@@ -15,7 +15,6 @@ const HeaderImage = styled.div`
 `;
 
 const MainImage = (props) => {
-    console.log(props);
     return (
         <HeaderImage imgUrl={props.imgUrl}>
         </HeaderImage>

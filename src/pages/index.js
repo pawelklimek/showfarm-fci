@@ -6,18 +6,7 @@ import bigImg from "static/images/showfarm/big-img.jpg"
 import certificationFCI from "static/images/showfarm/FCI.png"
 import certificationZK from "static/images/showfarm/ZK.png"
 import {theme} from "static/layout/theme";
-
-const HeaderImage = styled.div`
-  background-image: url(${titleImg});
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 50%;
-  
-  ${theme.media.desktop} {
-    background-position: center;
-  }
-`;
+import MainImage from "src/components/main-image/main-image";
 
 const PageContent = styled.div`
   display: flex;
@@ -82,7 +71,7 @@ const CertificationLogoWrapper = styled.div`
 
 const CertificationLogo = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
-  background-size: 40%;
+  background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -92,7 +81,7 @@ const CertificationLogo = styled.div`
 const IndexPage = () => {
     return (
         <Layout>
-            <HeaderImage/>
+            <MainImage imgUrl={titleImg}/>
             <PageContent>
                 <ImageWrapper>
                     <BigImage/>

@@ -45,8 +45,6 @@ const MenuItem = styled.div`
        color: ${theme.colors.darkGold};
     }
   }
-  
-
 `;
 
 const Menu = () => {
