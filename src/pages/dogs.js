@@ -13,23 +13,41 @@ const DogsPage = () => {
                 <MainImage imgUrl={Image}/>
                 <Title title={"Psy"}/>
                 <DogCard
-                    name={Dogs.Maizy.name}
-                    fullName={Dogs.Maizy.fullName}
-                    description={Dogs.Maizy.description}
-                    topImage={Dogs.Maizy.topImage}
-                    bottomImage={Dogs.Maizy.bottomImg}/>
-                <DogCard
                     name={Dogs.Joy.name}
                     fullName={Dogs.Joy.fullName}
                     description={Dogs.Joy.description}
                     topImage={Dogs.Joy.topImage}
                     bottomImage={Dogs.Joy.bottomImg}/>
                 <DogCard
+                    name={Dogs.Dora.name}
+                    fullName={Dogs.Dora.fullName}
+                    description={Dogs.Dora.description}
+                    topImage={Dogs.Dora.topImage}
+                    bottomImage={Dogs.Dora.bottomImg}/>
+                <DogCard
+                    name={Dogs.Maizy.name}
+                    fullName={Dogs.Maizy.fullName}
+                    description={Dogs.Maizy.description}
+                    topImage={Dogs.Maizy.topImage}
+                    bottomImage={Dogs.Maizy.bottomImg}/>
+                <DogCard
+                    name={Dogs.Mora.name}
+                    fullName={Dogs.Mora.fullName}
+                    description={Dogs.Mora.description}
+                    topImage={Dogs.Mora.topImage}
+                    bottomImage={Dogs.Mora.bottomImg}/>
+                <DogCard
                     name={Dogs.Abi.name}
                     fullName={Dogs.Abi.fullName}
                     description={Dogs.Abi.description}
                     topImage={Dogs.Abi.topImage}
                     bottomImage={Dogs.Abi.bottomImg}/>
+                <DogCard
+                    name={Dogs.Jaga.name}
+                    fullName={Dogs.Jaga.fullName}
+                    description={Dogs.Jaga.description}
+                    topImage={Dogs.Jaga.topImage}
+                    bottomImage={Dogs.Jaga.bottomImg}/>
                 <DogCard
                     name={Dogs.Dakota.name}
                     fullName={Dogs.Dakota.fullName}
@@ -42,24 +60,6 @@ const DogsPage = () => {
                     description={Dogs.Ruby.description}
                     topImage={Dogs.Ruby.topImage}
                     bottomImage={Dogs.Ruby.bottomImg}/>
-                <DogCard
-                    name={Dogs.Jaga.name}
-                    fullName={Dogs.Jaga.fullName}
-                    description={Dogs.Jaga.description}
-                    topImage={Dogs.Jaga.topImage}
-                    bottomImage={Dogs.Jaga.bottomImg}/>
-                <DogCard
-                    name={Dogs.Mora.name}
-                    fullName={Dogs.Mora.fullName}
-                    description={Dogs.Mora.description}
-                    topImage={Dogs.Mora.topImage}
-                    bottomImage={Dogs.Mora.bottomImg}/>
-                <DogCard
-                    name={Dogs.Dora.name}
-                    fullName={Dogs.Dora.fullName}
-                    description={Dogs.Dora.description}
-                    topImage={Dogs.Dora.topImage}
-                    bottomImage={Dogs.Dora.bottomImg}/>
                 <DogCard
                     name={Dogs.Breg.name}
                     fullName={Dogs.Breg.fullName}

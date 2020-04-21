@@ -40,9 +40,10 @@ const FullName = styled.div`
 `;
 
 const CardImg = styled.div`  
+  flex: 0 0 50%;
+
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
-  flex: 0 0 50%;
   background-size: cover;
   background-repeat: no-repeat;
 `;
