@@ -13,7 +13,8 @@ const DogCardStyle = styled.div`
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 70vh;
+  height: 90vh;
+  margin: 1rem;
 `;
 const Top = styled.div`  
   flex: 2;
@@ -35,6 +36,7 @@ const Name = styled.div`
 `;
 
 const FullName = styled.div`  
+  white-space: pre-wrap;
 `;
 
 const CardImg = styled.div`  
@@ -57,6 +59,7 @@ const BottomText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: pre-wrap;
 `;
 
 
@@ -73,7 +76,7 @@ const DogCard = (props) => {
                     </TopText>
                 </Top>
                 <Bottom>
-                    <BottomText innerHTM={props.description}></BottomText>
+                    <BottomText as={'text'}>{props.description}</BottomText>
                     <CardImg imgUrl={props.bottomImage}/>
                 </Bottom>
             </DogCardStyle>

@@ -1,12 +1,10 @@
 import React from "react"
 import Layout from "static/layout/layout";
 import Image from "static/images/showfarm/showfarm-title.jpg";
-import Maizy1 from "static/images/dogs/maizy1.jpg";
-import Maizy2 from "static/images/dogs/maizy2.jpg";
-
 import Title from "src/components/title/title";
 import MainImage from "src/components/main-image/main-image";
 import DogCard from "src/components/dog-card/dog-card";
+import {Dogs} from "static/dogs";
 
 const DogsPage = () => {
     return (
@@ -15,21 +13,59 @@ const DogsPage = () => {
                 <MainImage imgUrl={Image}/>
                 <Title title={"Psy"}/>
                 <DogCard
-                    name={"Maizy"}
-                    fullName={"Jr.Ch.Pl, Ch.Pl Showfarm Polish Vodka Maizy (Ch.Hearthside French Connection X Ch.Tanmark's Dreams Come True"}
-                    description={`Ur. 14.05.2012<br/>" +
-                    "Umaszczenie: blue merle\n" +
-                    "HD: A/A   ED: 0/0  \n" +
-                    "Badania:\n" +
-                    "MDR1 +/+\n" +
-                    "CEA - clear \n" +
-                    "PRA - clear\n" +
-                    "HFS4 - clear\n" +
-                    "Uzębienie pełne, zgryz nożycowy\n" +
-                    "Właściciel: Karolina Klimek`}
-                    topImage={Maizy2}
-                    bottomImage={Maizy1}
-                />
+                    name={Dogs.Maizy.name}
+                    fullName={Dogs.Maizy.fullName}
+                    description={Dogs.Maizy.description}
+                    topImage={Dogs.Maizy.topImage}
+                    bottomImage={Dogs.Maizy.bottomImg}/>
+                <DogCard
+                    name={Dogs.Joy.name}
+                    fullName={Dogs.Joy.fullName}
+                    description={Dogs.Joy.description}
+                    topImage={Dogs.Joy.topImage}
+                    bottomImage={Dogs.Joy.bottomImg}/>
+                <DogCard
+                    name={Dogs.Abi.name}
+                    fullName={Dogs.Abi.fullName}
+                    description={Dogs.Abi.description}
+                    topImage={Dogs.Abi.topImage}
+                    bottomImage={Dogs.Abi.bottomImg}/>
+                <DogCard
+                    name={Dogs.Dakota.name}
+                    fullName={Dogs.Dakota.fullName}
+                    description={Dogs.Dakota.description}
+                    topImage={Dogs.Dakota.topImage}
+                    bottomImage={Dogs.Dakota.bottomImg}/>
+                <DogCard
+                    name={Dogs.Ruby.name}
+                    fullName={Dogs.Ruby.fullName}
+                    description={Dogs.Ruby.description}
+                    topImage={Dogs.Ruby.topImage}
+                    bottomImage={Dogs.Ruby.bottomImg}/>
+                <DogCard
+                    name={Dogs.Jaga.name}
+                    fullName={Dogs.Jaga.fullName}
+                    description={Dogs.Jaga.description}
+                    topImage={Dogs.Jaga.topImage}
+                    bottomImage={Dogs.Jaga.bottomImg}/>
+                <DogCard
+                    name={Dogs.Mora.name}
+                    fullName={Dogs.Mora.fullName}
+                    description={Dogs.Mora.description}
+                    topImage={Dogs.Mora.topImage}
+                    bottomImage={Dogs.Mora.bottomImg}/>
+                <DogCard
+                    name={Dogs.Dora.name}
+                    fullName={Dogs.Dora.fullName}
+                    description={Dogs.Dora.description}
+                    topImage={Dogs.Dora.topImage}
+                    bottomImage={Dogs.Dora.bottomImg}/>
+                <DogCard
+                    name={Dogs.Breg.name}
+                    fullName={Dogs.Breg.fullName}
+                    description={Dogs.Breg.description}
+                    topImage={Dogs.Breg.topImage}
+                    bottomImage={Dogs.Breg.bottomImg}/>
             </Layout>
         </div>
     )
