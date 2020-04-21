@@ -4,15 +4,21 @@ import {theme} from "../../../static/layout/theme"
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 const active = "active";
-const MenuWrapper = styled.div`
+const DogScrollMenu = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: ${theme.colors.lightGray};
-  width: 20vw;
+  width: 10vw;
   padding: 0.5rem;
+`;
+
+const Menu = styled.div`
+  white-space: pre-wrap;
+  font-size: 1rem;
+
 `;
 
 const MenuItem = styled.div`
@@ -21,7 +27,7 @@ const MenuItem = styled.div`
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
-  margin-right:3%;
+  padding:1% 0;
   
   &:before {
     content: '';
@@ -39,28 +45,24 @@ const MenuItem = styled.div`
   &:hover::before {
     transform: translate(-50%, 0) scaleX(1);
   }
-  
-  &.${active}{
-    color: ${theme.colors.darkGold};
-    
-    &:hover {
-       color: ${theme.colors.darkGold};
-    }
-  }
 `;
 
 const DogScrollNavi = () => {
     return (
-        <MenuWrapper>
+        <DogScrollMenu>
+            <Menu>{"Miniaturowy \nOwraczek \nAmerykański"}</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
+            <Menu>{"Miniaturowy \nAustralijski"}</Menu>
+            <Menu>Suki</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dora')}>Dora</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#mora')}>Mora</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#jaga')}>Jaga</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dakota')}>Dakota</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#ruby')}>Ruby</MenuItem>
+            <Menu>Reproduktor</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#brag')}>Brag</MenuItem>
-        </MenuWrapper>
+        </DogScrollMenu>
     )
 };
 
