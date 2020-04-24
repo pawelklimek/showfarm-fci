@@ -9,9 +9,8 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   margin: 0;
   overflow:hidden;
-  font-family: "Montserrat";
-  font-weight: ${theme.font.thin};
-  }`;
+  font-family: 'Manrope';
+ }`;
 
 const LayoutWrapper = styled.div`
   margin: 0;

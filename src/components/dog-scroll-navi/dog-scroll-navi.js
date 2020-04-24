@@ -5,30 +5,35 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const active = "active";
 const DogScrollMenu = styled.div`
+  ${theme.media.desktop} {
   position: absolute;
+  top: 25%;
+  left: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: ${theme.colors.lightGray};
-  width: 10vw;
-  padding: 0.5rem;
+  width: 20%;
+  height: 50%;
+  }
 `;
 
 const Menu = styled.div`
+  padding-top: 1%;
   white-space: pre-wrap;
-  font-size: 1rem;
-
 `;
 
 const MenuItem = styled.div`
   position: relative;
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.mediumGray};
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
-  padding:1% 0;
-  
+  cursor: pointer;
+  padding-top: 1%;
+  transition: all 1s ease;
+
   &:before {
     content: '';
     position: absolute;
@@ -42,6 +47,10 @@ const MenuItem = styled.div`
     transition: transform 0.3s ease-in-out;
   }
 
+  &:hover {
+      color: ${theme.colors.darkGray};
+  }
+
   &:hover::before {
     transform: translate(-50%, 0) scaleX(1);
   }
@@ -50,9 +59,10 @@ const MenuItem = styled.div`
 const DogScrollNavi = () => {
     return (
         <DogScrollMenu>
-            <Menu>{"Miniaturowy \nOwraczek \nAmerykański"}</Menu>
+            <Menu>{"Miniaturowy"}</Menu>
+            <Menu>{"Owraczek Amerykański"}</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
-            <Menu>{"Miniaturowy \nAustralijski"}</Menu>
+            <Menu>{"Owraczek Australijski"}</Menu>
             <Menu>Suki</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dora')}>Dora</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>

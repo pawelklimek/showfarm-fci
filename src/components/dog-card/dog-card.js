@@ -2,8 +2,9 @@ import React from 'React';
 import styled from "styled-components";
 import Separator from "../separator/separator";
 import {theme} from "static/layout/theme";
+import {LeftHoverEffect} from "../animation/animationEffect";
 
-const DogCardWrapper = styled.div`  
+const DogCardWrapper = styled(LeftHoverEffect)`  
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -81,7 +82,6 @@ const DogCard = (props) => {
                 </Bottom>
             </DogCardStyle>
         </DogCardWrapper>
-
     )
 };
 

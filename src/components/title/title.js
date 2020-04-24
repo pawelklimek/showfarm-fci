@@ -7,12 +7,13 @@ const TitleStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 100;
 `;
 
 const Title = (props) => {
     return (
-        <TitleStyle>
-            <h1>{props.title}</h1>
+        <TitleStyle as={'H1'}>
+            {props.title}
             <Separator/>
         </TitleStyle>
     )

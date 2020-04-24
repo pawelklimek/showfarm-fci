@@ -1,8 +1,6 @@
 import React from "react"
 import Layout from "static/layout/layout";
-import Image from "static/images/showfarm/showfarm-title.jpg";
 import Title from "src/components/title/title";
-import MainImage from "src/components/main-image/main-image";
 import DogCard from "src/components/dog-card/dog-card";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
@@ -11,7 +9,6 @@ const DogsPage = () => {
     return (
         <div>
             <Layout>
-                <MainImage imgUrl={Image}/>
                 <Title title={"Psy"}/>
                 <DogScrollNavi/>
                 <div id='joy'/>
@@ -57,14 +54,13 @@ const DogsPage = () => {
                     description={Dogs.Jaga.description}
                     topImage={Dogs.Jaga.topImage}
                     bottomImage={Dogs.Jaga.bottomImg}/>
-                <div id='dagota'/>
+                <div id='dakota'/>
                 <DogCard
                     name={Dogs.Dakota.name}
                     fullName={Dogs.Dakota.fullName}
                     description={Dogs.Dakota.description}
                     topImage={Dogs.Dakota.topImage}
                     bottomImage={Dogs.Dakota.bottomImg}/>
-                <selector id="Ruby"/>
                 <div id='ruby'/>
                 <DogCard
                     name={Dogs.Ruby.name}
