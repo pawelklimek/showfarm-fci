@@ -12,10 +12,10 @@ const DogCardWrapper = styled.div`
 const DogCardStyle = styled.div`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
   height: 90vh;
-  margin: 1rem;
-  ${theme.effects.animation.entrance};
+  margin: 1rem 2rem 1rem 1rem;
+  ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
 `;
 
@@ -38,9 +38,11 @@ const Name = styled.div`
   font-size: 2rem;
   color:  ${theme.colors.darkGray};
   text-shadow: ${theme.effects.shadow};
+  ${theme.effects.animation.text};
 `;
 
 const FullName = styled.div`  
+  color:  ${theme.colors.darkGray};
   white-space: pre-wrap;
 `;
 
@@ -59,7 +61,8 @@ const Bottom = styled.div`
 `;
 
 const BottomText = styled.text`  
-  background-color: #c7bab8;
+  color:  ${theme.colors.darkGray};
+  background-color: ${theme.colors.lightGray};
   flex: 1;
   display: flex;
   justify-content: center;

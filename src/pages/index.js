@@ -7,6 +7,7 @@ import certificationFCI from "static/images/showfarm/FCI.png"
 import certificationZK from "static/images/showfarm/ZK.png"
 import {theme} from "static/layout/theme";
 import MainImage from "src/components/main-image/main-image";
+import Separator from "../components/separator/separator";
 
 const PageContent = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const ImageWrapper = styled.div`
 `;
 
 const BigImage = styled.div`
+  ${theme.effects.animation.entranceLeft};
   margin: 2rem 1rem 2rem 2rem;
   position: relative;
   background-image: url(${bigImg});
@@ -27,39 +29,44 @@ const BigImage = styled.div`
   background-repeat: no-repeat;
   background-position: top;
   height: 30rem;
+  box-shadow: ${theme.effects.shadow};
 `;
 
-const Content = styled.div`  
+const Content = styled.div` 
+  ${theme.effects.animation.entranceRight};
   margin: 2rem 2rem 2rem 1rem;
   flex: 1;
-  height: 20rem;
+  height: 24rem;
   display: flex;
   flex-direction: column;
-  align-self: self-start;`;
+  align-self: self-start;
+  background-color: ${theme.colors.lightGray};
+  box-shadow: ${theme.effects.shadow};
+`;
 
 const Title = styled.div`
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #b29a36;
   flex: 1;
   align-items: center;
   justify-content: center;
 `;
 
 const MainTitle = styled.div`
-  color: ${theme.colors.darkGold};
+  text-shadow: ${theme.effects.shadow};
+  color: ${theme.colors.darkGray};
   font-size: 2rem;
 `;
 
 const SubTitle = styled.div`
-  color: ${theme.colors.darkGold};
+  color: ${theme.colors.darkGray};
 `;
 
 const Description = styled.div`
   padding: 1rem;
-  font-weight: 100;
   text-align: center;
+  color: ${theme.colors.darkGray}
 `;
 
 const CertificationLogoWrapper = styled.div`
@@ -88,7 +95,8 @@ const IndexPage = () => {
                 </ImageWrapper>
                 <Content>
                     <Title>
-                        <MainTitle>Showfarm FCI</MainTitle>
+                        <MainTitle>SHOWFARM FCI</MainTitle>
+                        <Separator color={theme.colors.darkGold}/>
                         <SubTitle>Owczarek Australijski </SubTitle>
                         <SubTitle>Miniaturowy Owczarek Amerykański</SubTitle>
                     </Title>

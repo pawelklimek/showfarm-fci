@@ -8,7 +8,9 @@ const HeaderImage = styled.div`
   background-repeat: no-repeat;
   background-position: top;
   height: 50%;
-  
+  ${theme.effects.animation.entranceTop};
+  box-shadow:   ${theme.effects.shadow};
+
   ${theme.media.desktop}{
     background-position: center;
   }

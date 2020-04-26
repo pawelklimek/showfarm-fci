@@ -5,6 +5,7 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const active = "active";
 const DogScrollMenu = styled.div`
+  ${theme.effects.animation.entranceLeft}
   ${theme.media.desktop} {
   position: absolute;
   top: 25%;
@@ -34,7 +35,6 @@ const MenuItem = styled.div`
   cursor: pointer;
   padding-top: 1%;
   transition: all 1s ease;
-
   &:before {
     content: '';
     position: absolute;

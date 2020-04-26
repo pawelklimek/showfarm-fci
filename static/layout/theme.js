@@ -19,7 +19,7 @@ export const effects = {
              0 16px 16px rgba(0,0,0,0.11), 
              0 32px 32px rgba(0,0,0,0.11);`,
     animation: {
-        text: `animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        text: `animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
                 @keyframes tracking-in-expand {
                 0% {
                 letter-spacing: -0.5em;
@@ -32,8 +32,7 @@ export const effects = {
                 opacity: 1;
                 }
                 }`,
-        entrance:
-            `animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        entranceRight: `animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 @keyframes fade-in-right {
   0% {
     transform: translateX(50px);
@@ -41,6 +40,29 @@ export const effects = {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+`,
+        entranceLeft: `animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+`,entranceTop: `animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+@keyframes fade-in-top {
+ 0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }

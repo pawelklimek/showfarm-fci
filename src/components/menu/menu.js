@@ -6,12 +6,17 @@ import {Link} from "gatsby";
 const active = "active";
 
 const MenuWrapper = styled.div`
-  box-shadow: ${theme.effects.shadow};
+ position: absolute;
+ z-index: 1000;
+ width: 30%;
+  top: 2%;
+  left: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${theme.colors.lightGray};
-  padding: 0.5rem;
+  box-shadow: ${theme.effects.shadow};
+  padding: 1rem 0;
 `;
 
 const MenuItem = styled.div`
@@ -50,13 +55,15 @@ const MenuItem = styled.div`
 
 const Menu = () => {
     return (
-        <MenuWrapper>
-            <MenuItem as={Link} activeClassName={active} to="/">Showfarm FCI</MenuItem>
-            <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
-            <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
-            <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
-            <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
-        </MenuWrapper>
+        <div>
+            <MenuWrapper>
+                <MenuItem as={Link} activeClassName={active} to="/">Showfarm FCI</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
+            </MenuWrapper>
+        </div>
     )
 };
 
