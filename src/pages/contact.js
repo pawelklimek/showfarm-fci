@@ -3,8 +3,7 @@ import styled from "styled-components";
 import contactBlack from "static/images/contact/contactBlack.jpg"
 import Layout from "static/layout/layout";
 import Separator from "src/components/separator/separator"
-import {LeftHoverEffect} from "../components/animation/animationEffect";
-
+import {theme} from "../../static/layout/theme";
 
 const Background = styled.div`
   display: flex;
@@ -22,7 +21,7 @@ const Header = styled.p`
   color: white;
 `;
 
-const Card = styled(LeftHoverEffect)`
+const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +57,7 @@ const ContactPage = () => {
                 <Background>
                     <Card>
                         <Header>KONTAKT</Header>
-                        <Separator/>
+                        <Separator color={theme.colors.lightGray}/>
                         <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
                         <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów</Contact>
                         <br/>

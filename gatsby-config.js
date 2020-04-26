@@ -13,9 +13,7 @@ module.exports = {
                 ],
                 display: 'swap'
             }
-        }
-
-        ,
+        },
         {
             resolve: 'gatsby-plugin-root-import',
             options: {

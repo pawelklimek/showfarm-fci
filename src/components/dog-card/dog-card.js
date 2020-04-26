@@ -2,20 +2,21 @@ import React from 'React';
 import styled from "styled-components";
 import Separator from "../separator/separator";
 import {theme} from "static/layout/theme";
-import {LeftHoverEffect} from "../animation/animationEffect";
 
-const DogCardWrapper = styled(LeftHoverEffect)`  
+const DogCardWrapper = styled.div`  
   display: flex;
   justify-content: flex-end;
   align-items: center;
 `;
 
-const DogCardStyle = styled.div`  
+const DogCardStyle = styled.div`
   display: flex;
   flex-direction: column;
   width: 70%;
   height: 90vh;
   margin: 1rem;
+  ${theme.effects.animation.entrance};
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const Top = styled.div`  
@@ -35,6 +36,8 @@ const TopText = styled.div`
 
 const Name = styled.div`  
   font-size: 2rem;
+  color:  ${theme.colors.darkGray};
+  text-shadow: ${theme.effects.shadow};
 `;
 
 const FullName = styled.div`  
@@ -55,8 +58,8 @@ const Bottom = styled.div`
   flex-direction: row;
 `;
 
-const BottomText = styled.div`  
-  background-color: ${theme.colors.lightGray};
+const BottomText = styled.text`  
+  background-color: #c7bab8;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -72,12 +75,12 @@ const DogCard = (props) => {
                     <CardImg imgUrl={props.topImage}/>
                     <TopText>
                         <Name>{props.name}</Name>
-                        <Separator/>
+                        <Separator color={theme.colors.darkGold}/>
                         <FullName>{props.fullName}</FullName>
                     </TopText>
                 </Top>
                 <Bottom>
-                    <BottomText as={'text'}>{props.description}</BottomText>
+                    <BottomText>{props.description}</BottomText>
                     <CardImg imgUrl={props.bottomImage}/>
                 </Bottom>
             </DogCardStyle>

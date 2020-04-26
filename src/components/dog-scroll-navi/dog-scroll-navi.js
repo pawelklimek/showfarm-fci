@@ -16,7 +16,8 @@ const DogScrollMenu = styled.div`
   background-color: ${theme.colors.lightGray};
   width: 20%;
   height: 50%;
-  }
+  box-shadow: ${theme.effects.shadow}
+ }
 `;
 
 const Menu = styled.div`

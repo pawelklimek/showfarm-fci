@@ -6,6 +6,7 @@ import {Link} from "gatsby";
 const active = "active";
 
 const MenuWrapper = styled.div`
+  box-shadow: ${theme.effects.shadow};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@ const MenuItem = styled.div`
   font-size: 1rem;
   text-decoration: none;
   margin-right:3%;
-  
+
   &:before {
     content: '';
     position: absolute;

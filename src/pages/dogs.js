@@ -5,11 +5,12 @@ import DogCard from "src/components/dog-card/dog-card";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 
+
 const DogsPage = () => {
     return (
         <div>
             <Layout>
-                <Title title={"Psy"}/>
+                <div>
                 <DogScrollNavi/>
                 <div id='joy'/>
                 <DogCard
@@ -75,6 +76,7 @@ const DogsPage = () => {
                     description={Dogs.Brag.description}
                     topImage={Dogs.Brag.topImage}
                     bottomImage={Dogs.Brag.bottomImg}/>
+                </div>
             </Layout>
         </div>
     )

@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
  }`;
 
 const LayoutWrapper = styled.div`
+  background: rgb(213,164,130);
+  background: linear-gradient(90deg, rgba(213,164,130,1) 0%, rgba(115,75,75,1) 100%);
   margin: 0;
   display: flex;
   flex-direction: column;

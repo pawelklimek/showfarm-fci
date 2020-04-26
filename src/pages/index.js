@@ -7,7 +7,6 @@ import certificationFCI from "static/images/showfarm/FCI.png"
 import certificationZK from "static/images/showfarm/ZK.png"
 import {theme} from "static/layout/theme";
 import MainImage from "src/components/main-image/main-image";
-import {LeftHoverEffect} from "../components/animation/animationEffect";
 
 const PageContent = styled.div`
   display: flex;
@@ -16,7 +15,7 @@ const PageContent = styled.div`
   justify-content: center;
 `;
 
-const ImageWrapper = styled(LeftHoverEffect)`
+const ImageWrapper = styled.div`
   flex: 1;
 `;
 
