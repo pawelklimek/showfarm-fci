@@ -6,22 +6,22 @@ import {Link} from "gatsby";
 const active = "active";
 
 const MenuWrapper = styled.div`
- position: absolute;
- z-index: 1000;
- width: 30%;
+  position: absolute;
+  z-index: 1000;
+  width: 30%;
   top: 2%;
   left: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.lightGray};
+  background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
   padding: 1rem 0;
 `;
 
 const MenuItem = styled.div`
   position: relative;
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.fontColorGray};
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
@@ -60,6 +60,7 @@ const Menu = () => {
                 <MenuItem as={Link} activeClassName={active} to="/">Showfarm FCI</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
+                {/*<MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>*/}
                 <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
             </MenuWrapper>

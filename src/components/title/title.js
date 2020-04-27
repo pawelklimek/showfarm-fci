@@ -9,7 +9,7 @@ const TitleStyle = styled.h1`
   justify-content: center;
   align-items: center;
   font-weight: 100;
-  color:${theme.colors.darkGray};
+  color:${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
@@ -17,7 +17,7 @@ const Title = (props) => {
     return (
         <TitleStyle>
             {props.title}
-            <Separator color={theme.colors.lightGray}/>
+            <Separator color={theme.colors.backgroundColor}/>
         </TitleStyle>
     )
 };

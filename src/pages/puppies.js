@@ -7,8 +7,8 @@ import Separator from "../components/separator/separator";
 const BlockWrapper = styled.div`
   flex: 1;
   display: flex;
-  margin-top: 20vh;
   padding: 1rem;
+  background-color: red;
 `;
 
 const Block = styled.div`
@@ -22,13 +22,13 @@ const Block = styled.div`
   padding: 1rem;
   
   box-shadow: ${theme.effects.shadow};
-  background-color: ${theme.colors.lightGray};
+  background-color: ${theme.colors.backgroundColor};
   ${theme.effects.animation.entranceLeft};
 `;
 
 const BlockTitle = styled.div`
   font-size: 2rem;
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
@@ -38,7 +38,7 @@ font-size: 0.8rem;
   display: flex;
   justify-content: center;
   
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.fontColorGray};
 `;
 const PuppiesPage = () => {
     return (
@@ -81,7 +81,6 @@ const PuppiesPage = () => {
                             wybór rodziców musi być zawsze przemyślany!</Text>
                     </Block>
                 </BlockWrapper>
-
             </Layout>
         </div>
     )

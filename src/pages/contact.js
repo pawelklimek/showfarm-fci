@@ -11,12 +11,12 @@ const Header = styled.div`
 `;
 
 const Card = styled.div`
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.fontColorGray};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.lightGray};
+  background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
   ${theme.effects.animation.entranceRight};
   margin: 10rem;
@@ -27,14 +27,14 @@ const Contact = styled.div`
    text-decoration: none;
    margin: 2px;
    text-align: center;
-    color: ${theme.colors.darkGray};
+    color: ${theme.colors.fontColorGray};
 `;
 
 const ContactLink = styled.a`
     text-decoration: none;
     text-align: center;
     transition: all 0.3s ease;
-    color: ${theme.colors.darkGray};
+    color: ${theme.colors.fontColorGray};
     &:hover {
       color: #3b5998;
     }

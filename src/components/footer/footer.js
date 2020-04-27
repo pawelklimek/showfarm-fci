@@ -6,12 +6,13 @@ const FooterStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-
+  
+  padding: 0.5%;
+  
   font-weight: 200;
   font-size: 0.8rem;
-  background-color: ${theme.colors.lightGray};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.fontColorGray};
+  background-color: ${theme.colors.backgroundColor};
 `;
 
 const Footer = () => {

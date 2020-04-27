@@ -15,7 +15,7 @@ const DogScrollMenu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.lightGray};
+  background-color: ${theme.colors.backgroundColor};
   width: 30%;
   height: 50%;
   box-shadow: ${theme.effects.shadow}
@@ -50,7 +50,7 @@ const MenuItem = styled.div`
   }
 
   &:hover {
-      color: ${theme.colors.darkGray};
+      color: ${theme.colors.fontColorGray};
   }
 
   &:hover::before {

@@ -1,8 +1,8 @@
 export const colors = {
     darkGold: '#b29a36',
-    lightGray: '#f2f2f2',
+    backgroundColor: '#f2f2f2',
     mediumGray: '#888589',
-    darkGray: '#474448',
+    fontColorGray: '#474448',
     color1: '#c7bab8',
     color2: '#d5a482',
     color3: '#592E21',
