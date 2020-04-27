@@ -2,16 +2,10 @@ import React from 'React';
 import styled from "styled-components";
 import Separator from "../separator/separator";
 import {theme} from "static/layout/theme";
-
-const CardWrapper = styled.div`  
-  flex: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-`;
+import {CardWrapper} from "./card-shared";
 
 const CardStyle = styled.div`
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   margin: 1rem 1rem;

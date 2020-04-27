@@ -5,7 +5,7 @@ import bigImg from "static/images/showfarm/big-img.jpg"
 import topImg from "static/images/showfarm/dogs.jpg"
 import certificationFCI from "static/images/showfarm/FCI.png"
 import certificationZK from "static/images/showfarm/ZK.png"
-import CardFourParts from "../components/card/cardFourParts";
+import CardFourParts from "../components/cards/cardFourParts";
 import {theme} from "../../static/layout/theme";
 
 const PageContent = styled.div`
@@ -46,7 +46,7 @@ const Circle = styled.div`
   height:20vh;
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
-  ${theme.effects.animation.entranceLeft};
+  ${theme.effects.animation.entranceTop};
 `;
 const CertificationLogoWrapper = styled.div`
   flex: 1;

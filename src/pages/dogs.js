@@ -1,22 +1,20 @@
 import React from "react"
 import Layout from "static/layout/layout";
-import CardFourParts from "src/components/card/cardFourParts";
+import CardFourParts from "src/components/cards/cardFourParts";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 import styled from "styled-components";
 
+
 const DogCardWrapper = styled.div`  
   display: flex;
-
 `;
 
 const Left = styled.div`  
   flex: 1;
-
 `;
 const Right = styled.div`  
   flex: 2;
-
 `;
 
 const DogsPage = () => {

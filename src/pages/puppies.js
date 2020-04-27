@@ -1,14 +1,20 @@
 import React from "react"
 import Layout from "static/layout/layout";
 import styled from "styled-components";
-import {theme} from "../../static/layout/theme";
-import Separator from "../components/separator/separator";
+import {theme} from "static/layout/theme";
+import Separator from "src/components/separator/separator";
+import CardTwoParts from "src/components/cards/cardTwoParts";
+import imageUrl from "static/images/puppies/puppy-theme.jpg";
+
+const DivTop = styled.div`
+  padding-top: 5%;
+  display: flex;
+  flex: 1;
+`;
 
 const BlockWrapper = styled.div`
   flex: 1;
   display: flex;
-  padding: 1rem;
-  background-color: red;
 `;
 
 const Block = styled.div`
@@ -33,17 +39,24 @@ const BlockTitle = styled.div`
 `;
 
 const Text = styled.text` 
-font-size: 0.8rem;
+  font-size: 0.8rem;
   flex:3;
   display: flex;
   justify-content: center;
   
   color: ${theme.colors.fontColorGray};
 `;
+
 const PuppiesPage = () => {
     return (
         <div>
             <Layout>
+                <DivTop>
+                    <CardTwoParts
+                        title={'MIOT'}
+                        subTitle={'Pod koniec lutego urodził nam się cudowny miot owczarków australijskich po naszej kochanej Jadze i przepięknym Bolsie! Urodziło się 5 szczeniąt - 2 suczki i 3 chłopców. Wszystkie szczeniaki w umaszczeniu blue merle.'}
+                        imgUrl={imageUrl}/>
+                </DivTop>
                 <BlockWrapper>
                     <Block>
                         <BlockTitle>Dom</BlockTitle>
