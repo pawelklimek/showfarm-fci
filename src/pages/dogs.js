@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "static/layout/layout";
-import Title from "src/components/title/title";
 import DogCard from "src/components/dog-card/dog-card";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";

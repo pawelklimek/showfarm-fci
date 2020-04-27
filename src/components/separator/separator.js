@@ -11,7 +11,6 @@ const SeparatorStyle = styled.div`
 `;
 
 const Separator = (props) => {
-    console.log(props.color);
     return (
         <SeparatorStyle color={props.color}/>
     )

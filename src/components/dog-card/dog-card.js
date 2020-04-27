@@ -63,6 +63,7 @@ const Bottom = styled.div`
 const BottomText = styled.text`  
   color:  ${theme.colors.darkGray};
   background-color: ${theme.colors.lightGray};
+  padding: 1rem;
   flex: 1;
   display: flex;
   justify-content: center;

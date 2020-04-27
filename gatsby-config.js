@@ -5,6 +5,7 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-smoothscroll`,
+        `react-animate-on-scroll`,
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {

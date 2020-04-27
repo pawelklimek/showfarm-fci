@@ -10,11 +10,14 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   overflow:hidden;
   font-family: 'Manrope';
+  border-radius: 1px;
  }`;
 
 const LayoutWrapper = styled.div`
-  background: rgb(213,164,130);
-  background: linear-gradient(90deg, rgba(213,164,130,1) 0%, rgba(115,75,75,1) 100%);
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 0;
   display: flex;
   flex-direction: column;
