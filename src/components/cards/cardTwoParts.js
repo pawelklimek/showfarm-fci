@@ -9,7 +9,7 @@ const CardStyle = styled.div`
   display: flex;
   flex-direction: row;
   margin: 1rem 1rem;
-  ${theme.effects.animation.entranceRight};
+  ${theme.effects.animation.entranceBottom};
   box-shadow: ${theme.effects.shadow};
 `
 

@@ -19,7 +19,6 @@ const Card = styled.div`
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
   ${theme.effects.animation.entranceRight};
-  margin: 10rem;
   padding: 1rem;
 `;
 
@@ -27,7 +26,7 @@ const Contact = styled.div`
    text-decoration: none;
    margin: 2px;
    text-align: center;
-    color: ${theme.colors.fontColorGray};
+   color: ${theme.colors.fontColorGray};
 `;
 
 const ContactLink = styled.a`
@@ -40,23 +39,34 @@ const ContactLink = styled.a`
     }
 `;
 
+const ContentWrapper = styled.div`
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 100%;
+`;
+
 const ContactPage = () => {
     return (
         <>
             <Layout>
-                <Card >
-                    <Header>KONTAKT</Header>
-                    <Separator color={theme.colors.darkGold}/>
-                    <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
-                    <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów.</Contact>
-                    <br/>
-                    <Contact>Założycielka hodowli: Karolina Klimek</Contact>
-                    <Contact as={'a'} href="mailto:showfarm.kennel@gmail.com">showfarm.kennel@gmail.com</Contact>
-                    <Contact>+48 509 354 704</Contact>
-                    <ContactLink href="https://www.facebook.com/showfarm.kennel">Facebook</ContactLink>
-                    <br/>
-                    <Contact>Poznań</Contact>
-                </Card>
+                <ContentWrapper>
+                    <Card>
+                        <Header>KONTAKT</Header>
+                        <Separator color={theme.colors.darkGold}/>
+                        <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
+                        <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów.</Contact>
+                        <br/>
+                        <Contact>Założycielka hodowli: Karolina Klimek</Contact>
+                        <Contact as={'a'} href="mailto:showfarm.kennel@gmail.com">showfarm.kennel@gmail.com</Contact>
+                        <Contact>+48 509 354 704</Contact>
+                        <ContactLink href="https://www.facebook.com/showfarm.kennel">Facebook</ContactLink>
+                        <br/>
+                        <Contact>Poznań</Contact>
+                    </Card>
+                </ContentWrapper>
             </Layout>
         </>
     )

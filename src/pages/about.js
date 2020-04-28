@@ -4,14 +4,18 @@ import CardTreeParts from "../components/cards/cardTreeParts";
 import styled from "styled-components";
 import cardOneBig from "static/images/about/card-1-big.jpg"
 import cardOneSmall from "static/images/about/card-1-small.jpg"
+import cartTwoSmall from "static/images/about/card-2-small.jpg"
+import cardTwoBig from "static/images/about/card-2-big.jpg"
+import cardTreeSmall from "static/images/about/card-3-small.jpg"
+import cardThreeMedium from "static/images/about/card-3-medium.jpg"
+import cardThreeBig from "static/images/about/card-3-big.jpg"
 
-const Space = styled.div`
-flex: ${({flexSize}) => flexSize};
-`;
+import CardTreeXParts from "../components/cards/cardTreeXParts";
 
 const AboutWrapper = styled.div`  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-top: 5%;
 `;
 
 const AboutPage = () => {
@@ -19,10 +23,21 @@ const AboutPage = () => {
         <div>
             <Layout>
                 <AboutWrapper>
-                    <Space flexSize={1}/>
-                    <CardTreeParts smallImg={cardOneSmall}
-                                   bigImg={cardOneBig}
-                                   description={`Psy z naszej hodowli są kochanymi członkami rodziny, które kochają aktywność i pracę z człowiekiem! Owczarki od nas są bardzo uniwersalne gdyż sprawdzają się w psich sportach jak frisbee czy agility.Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
+                    <CardTreeParts
+                        smallImg={cardOneSmall}
+                        bigImg={cardOneBig}
+                        direction={`column-reverse`}
+                        description={`Psy z naszej hodowli są kochanymi członkami rodziny, które kochają aktywność i pracę z człowiekiem! Owczarki od nas są bardzo uniwersalne gdyż sprawdzają się w psich sportach jak frisbee czy agility.Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
+                    <CardTreeParts
+                        smallImg={cartTwoSmall}
+                        bigImg={cardTwoBig}
+                        description={`Wiele psów z naszej hodowli spróbowało pasienia i pokazało, że psy od nas mają instynkt pasterski. Potrafią być niesamowitymi kompanami w stajennym życiu. Fantastycznie sprawdzają się na wspólne bieganie czy wycieczki rowerowe!`}/>
+                    <CardTreeXParts
+                        smallImg={cardTreeSmall}
+                        mediumImg={cardThreeMedium}
+                        bigImg={cardThreeBig}
+                        description={`Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
+
                 </AboutWrapper>
             </Layout>
         </div>

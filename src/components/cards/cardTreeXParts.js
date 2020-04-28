@@ -30,15 +30,16 @@ const Right = styled.div`
 const TopText = styled.div`  
   flex: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   background-color: ${theme.colors.backgroundColor};
-  padding: 1rem 1rem;
 `;
 
 const Description = styled.div`  
+align-self: center;
   color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
+  padding: 1rem 1rem;
 `;
 
 const BigImg = styled.div`  
@@ -51,14 +52,22 @@ const BigImg = styled.div`
 
 
 const SmallImg = styled.div`  
-  flex: 1 1 50%;
+  flex: 0 0 50%;
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
 `;
 
-const CardTreeParts = (props) => {
+const SmallXImg = styled.div`  
+  flex: 0 0 50%;
+  background-position: 50% 50%;
+  background-image: url(${({imgUrl}) => imgUrl});
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+const CardTreeXParts = (props) => {
     return (
         <CardStyle>
             <Left>
@@ -68,9 +77,10 @@ const CardTreeParts = (props) => {
                 <SmallImg imgUrl={props.smallImg}/>
                 <TopText>
                     <Description>{props.description}</Description>
+                    <SmallXImg imgUrl={props.mediumImg}/>
                 </TopText>
             </Right>
         </CardStyle>)
 };
 
-export default CardTreeParts;
+export default CardTreeXParts;

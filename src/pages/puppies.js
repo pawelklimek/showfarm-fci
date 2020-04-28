@@ -29,21 +29,22 @@ const Block = styled.div`
   
   box-shadow: ${theme.effects.shadow};
   background-color: ${theme.colors.backgroundColor};
-  ${theme.effects.animation.entranceLeft};
+  ${theme.effects.animation.entranceBottom};
 `;
 
 const BlockTitle = styled.div`
+  margin-bottom: -0.5rem;
   font-size: 2rem;
   color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
 const Text = styled.text` 
-  font-size: 0.8rem;
   flex:3;
   display: flex;
   justify-content: center;
   
+  font-size: 0.8rem;
   color: ${theme.colors.fontColorGray};
 `;
 

@@ -32,7 +32,6 @@ const Name = styled.div`
   font-size: 2rem;
   color:  ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
-  ${theme.effects.animation.text};
 `;
 
 const FullName = styled.div`  
