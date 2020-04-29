@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../static/layout/theme"
 import {Link} from "gatsby";
@@ -12,6 +12,7 @@ const MenuWrapper = styled.div`
   top: 2%;
   left: 1%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: ${theme.colors.backgroundColor};
@@ -57,10 +58,10 @@ const Menu = () => {
     return (
         <div>
             <MenuWrapper>
-                <MenuItem as={Link} activeClassName={active} to="/">Showfarm FCI</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/">Showfarm</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
-                <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
-                {/*<MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>*/}
+                <MenuItem as={Link} disabled activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
             </MenuWrapper>

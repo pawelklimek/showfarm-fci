@@ -14,10 +14,7 @@ const GlobalStyle = createGlobalStyle`
  }`;
 
 const LayoutWrapper = styled.div`
-  background: #7F7FD5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(67,144,233,1) 0%, rgba(78,226,198,1) 90.1% );
   margin: 0;
   display: flex;
   flex-direction: column;

@@ -16,18 +16,6 @@ const PageContent = styled.div`
   flex-direction:row;
 `;
 
-// const Card = styled.div`
-// margin: 1rem;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   width: 30%;
-//   height: 50vh;
-//   background-color: ${theme.colors.backgroundColor};
-//   box-shadow: ${theme.effects.shadow}
-//   ${theme.effects.animation.entranceTop};
-// `;
 const Left = styled.div`
 flex: 1;
 `;

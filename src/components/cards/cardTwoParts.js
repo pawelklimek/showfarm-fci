@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import styled from "styled-components";
 import Separator from "../separator/separator";
 import {theme} from "static/layout/theme";
