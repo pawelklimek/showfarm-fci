@@ -7,7 +7,9 @@ const CardStyle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  
   margin: 1rem 1rem;
+  
   ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
 `;
@@ -17,6 +19,7 @@ const Left = styled.div`
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  
   height: 75vh;
 `;
 
@@ -24,6 +27,7 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
+ 
   height: 75vh;
 `;
 
@@ -32,27 +36,30 @@ const TopText = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+ 
   background-color: ${theme.colors.backgroundColor};
 `;
 
 const Description = styled.div`  
-align-self: center;
+  align-self: center;
+  
+  padding: 1rem 1rem;
   color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
-  padding: 1rem 1rem;
 `;
 
 const BigImg = styled.div`  
   flex: 0 0 100%;
+  
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
 `;
 
-
 const SmallImg = styled.div`  
   flex: 0 0 50%;
+  
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
@@ -61,6 +68,7 @@ const SmallImg = styled.div`
 
 const SmallXImg = styled.div`  
   flex: 0 0 50%;
+  
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
@@ -80,7 +88,8 @@ const CardTreeXParts = (props) => {
                     <SmallXImg imgUrl={props.mediumImg}/>
                 </TopText>
             </Right>
-        </CardStyle>)
+        </CardStyle>
+    )
 };
 
 export default CardTreeXParts;

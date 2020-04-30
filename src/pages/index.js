@@ -11,9 +11,9 @@ import {theme} from "../../static/layout/theme";
 const PageContent = styled.div`
   flex: 1;
   display: flex;
+  flex-direction:row;
   justify-content: center;
   align-items: center;
-  flex-direction:row;
 `;
 
 const Left = styled.div`
@@ -24,17 +24,20 @@ flex: 2;
 `;
 
 const Circle = styled.div`
-  border-radius: 50%;
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
   width: 20vh;
   height:20vh;
+  
+  margin: 1rem;
+  border-radius: 50%;
+  
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
-  ${theme.effects.animation.entranceTop};
+  ${theme.effects.animation.entranceBottom};
 `;
 const CertificationLogoWrapper = styled.div`
   flex: 1;

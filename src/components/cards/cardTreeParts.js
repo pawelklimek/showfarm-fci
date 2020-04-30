@@ -17,6 +17,7 @@ const Left = styled.div`
   display: flex;
   align-items: stretch;
   flex-direction: column;
+
   height: 75vh;
 `;
 
@@ -24,6 +25,7 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
+  
   height: 75vh;
 `;
 
@@ -32,8 +34,10 @@ const TopText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${theme.colors.backgroundColor};
+ 
   padding: 1rem 1rem;
+  
+  background-color: ${theme.colors.backgroundColor};
 `;
 
 const Description = styled.div`  
@@ -43,15 +47,16 @@ const Description = styled.div`
 
 const BigImg = styled.div`  
   flex: 0 0 100%;
+ 
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
 `;
 
-
 const SmallImg = styled.div`  
   flex: 1 1 50%;
+ 
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;

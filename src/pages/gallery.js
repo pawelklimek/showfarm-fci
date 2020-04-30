@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import pic1 from "static/images/gallery/1.jpg"
-import pic2 from "static/images/gallery/21.jpg"
+import pic2 from "static/images/gallery/2.jpg"
 import pic3 from "static/images/gallery/3.jpg"
 import pic4 from "static/images/gallery/4.jpg"
 import pic5 from "static/images/gallery/5.jpg"
@@ -20,33 +20,36 @@ import pic17 from "static/images/gallery/17.jpg"
 import pic18 from "static/images/gallery/18.jpg"
 import pic19 from "static/images/gallery/19.jpg"
 import pic20 from "static/images/gallery/20.jpg"
-import Layout from "../../static/layout/layout";
-import {theme} from "../../static/layout/theme";
+import Layout from "static/layout/layout";
+import {theme} from "static/layout/theme";
 
 const BackgroundStyle = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 5%;
+ 
   height:  90%;
   width: 100%;
-`
+`;
 
 const WrapperRow = styled.div`
   display: flex;
   justify-content: center;
+ 
   margin: 1rem;
   height: 100%;
-`
+`;
 
 const Image = styled.div`
-  width:5%;c
+  width:5%;
   height: 100%;
+ 
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(${({src}) => src});
   background-position: center;
-  box-shadow: ${theme.effects.shadow};
-  
+ 
+  box-shadow: ${theme.effects.shadow}; 
+
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1)
     ${({showDelay}) => showDelay}s both;
   @keyframes fade-in {
@@ -68,7 +71,7 @@ const Image = styled.div`
     filter: grayscale(0%);
     width: 100%;
   }
-`
+`;
 
 const GalleryPage = () => (
     <Layout>

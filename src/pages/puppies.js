@@ -7,9 +7,8 @@ import CardTwoParts from "src/components/cards/cardTwoParts";
 import imageUrl from "static/images/puppies/puppy-theme.jpg";
 
 const DivTop = styled.div`
-  padding-top: 5%;
-  display: flex;
   flex: 1;
+  display: flex;
 `;
 
 const BlockWrapper = styled.div`
@@ -23,6 +22,7 @@ const Block = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   height:40vh;
   margin: 1rem;
   padding: 1rem;
@@ -34,6 +34,7 @@ const Block = styled.div`
 
 const BlockTitle = styled.div`
   margin-bottom: -0.5rem;
+  
   font-size: 2rem;
   color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
@@ -76,15 +77,16 @@ const PuppiesPage = () => {
                             oczekuje od psa, co się chce z psem robić. Wszystkie podane informacje pozwolą nam wśród
                             szczeniąt wybrać tego jedynego, który charakterem będzie pasował do Twojego trybu życia i
                             dzięki temu stworzysz ze swoim psem na prawdę dobry team!</Text>
-                    </Block> <Block>
-                    <BlockTitle>Szczeniaki</BlockTitle>
-                    <Separator color={theme.colors.darkGold}/>
-                    <Text>W naszej hodowli kładziemy bardzo mocny nacisk na socjalizację szczeniąt dlatego już od
-                        pierwszych dni podajemy szczeniaki wczesnej stymulacji neurologicznej. Gdy podrosną
-                        przyzwyczajamy szczeniaki do nowych miejsc, jazdy autem, do innych zwierząt, do odgłosów
-                        codziennego życia gdyż im więcej szczeniak pozna za młodu tym łatwiej będzie radził sobie ze
-                        stresem w przyszłości.</Text>
-                </Block>
+                    </Block>
+                    <Block>
+                        <BlockTitle>Szczeniaki</BlockTitle>
+                        <Separator color={theme.colors.darkGold}/>
+                        <Text>W naszej hodowli kładziemy bardzo mocny nacisk na socjalizację szczeniąt dlatego już od
+                            pierwszych dni podajemy szczeniaki wczesnej stymulacji neurologicznej. Gdy podrosną
+                            przyzwyczajamy szczeniaki do nowych miejsc, jazdy autem, do innych zwierząt, do odgłosów
+                            codziennego życia gdyż im więcej szczeniak pozna za młodu tym łatwiej będzie radził sobie ze
+                            stresem w przyszłości.</Text>
+                    </Block>
                     <Block>
                         <BlockTitle>Rodzice</BlockTitle>
                         <Separator color={theme.colors.darkGold}/>

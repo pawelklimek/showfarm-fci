@@ -24,6 +24,7 @@ background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(67,1
 const Content = styled.div`
   flex-grow: 1;
   overflow-y: auto;
+  padding-top: 5%
 `;
 
 const Layout = ({children}) => (

@@ -8,6 +8,7 @@ const TitleStyle = styled.h1`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   font-weight: 100;
   color:${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};

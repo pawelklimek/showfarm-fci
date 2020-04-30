@@ -8,25 +8,28 @@ const CardStyle = styled.div`
   flex: 1;
   display: flex;
   flex-direction: row;
+ 
   margin: 1rem 1rem;
+  
   ${theme.effects.animation.entranceBottom};
   box-shadow: ${theme.effects.shadow};
-`
+`;
 
 const TopText = styled.div`  
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${theme.colors.backgroundColor};
+ 
   padding: 3rem 1rem;
+  
+  background-color: ${theme.colors.backgroundColor};
 `;
 
 const Name = styled.div`  
   font-size: 2rem;
   color:  ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
-  ${theme.effects.animation.text};
 `;
 
 const FullName = styled.div`  
@@ -36,6 +39,7 @@ const FullName = styled.div`
 
 const CardImg = styled.div`  
   flex: 0 0 50%;
+  
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;

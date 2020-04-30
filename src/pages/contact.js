@@ -11,22 +11,25 @@ const Header = styled.div`
 `;
 
 const Card = styled.div`
-  color: ${theme.colors.fontColorGray};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.backgroundColor};
-  box-shadow: ${theme.effects.shadow};
-  ${theme.effects.animation.entranceRight};
+  
   padding: 1rem;
+  
+  color: ${theme.colors.fontColorGray};
+  box-shadow: ${theme.effects.shadow};
+  background-color: ${theme.colors.backgroundColor};
+  ${theme.effects.animation.entranceRight};
 `;
 
 const Contact = styled.div`
-   text-decoration: none;
    margin: 2px;
+  
    text-align: center;
    color: ${theme.colors.fontColorGray};
+   text-decoration: none;
 `;
 
 const ContactLink = styled.a`

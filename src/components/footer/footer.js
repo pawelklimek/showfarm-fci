@@ -12,6 +12,7 @@ const FooterStyle = styled.div`
   font-weight: 200;
   font-size: 0.8rem;
   color: ${theme.colors.fontColorGray};
+ 
   background-color: ${theme.colors.backgroundColor};
 `;
 

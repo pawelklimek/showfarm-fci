@@ -15,7 +15,6 @@ import CardTreeXParts from "../components/cards/cardTreeXParts";
 const AboutWrapper = styled.div`  
   display: flex;
   flex-direction: column;
-  padding-top: 5%;
 `;
 
 const AboutPage = () => {

@@ -5,7 +5,6 @@ import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 import styled from "styled-components";
 
-
 const DogCardWrapper = styled.div`  
   display: flex;
 `;

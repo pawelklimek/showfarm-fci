@@ -8,8 +8,10 @@ const CardStyle = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  
   margin: 1rem 1rem;
-  ${theme.effects.animation.entranceRight};
+  
+  ${theme.effects.animation.entranceBottom};
   box-shadow: ${theme.effects.shadow};
 `;
 
@@ -24,6 +26,7 @@ const TopText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   background-color: ${theme.colors.backgroundColor};
   padding: 4rem 1rem;
 `;
@@ -41,6 +44,7 @@ const FullName = styled.div`
 
 const CardImg = styled.div`  
   flex: 0 0 50%;
+  
   background-position: 50% 50%;
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
@@ -49,20 +53,22 @@ const CardImg = styled.div`
 
 const Bottom = styled.div`  
   flex: 3;
- flex-basis: 50vh;
+  flex-basis: 50vh;
   display: flex;
   flex-direction: row;
 `;
 
 const BottomText = styled.text`  
-  color:  ${theme.colors.fontColorGray};
-  background-color: ${theme.colors.backgroundColor};
-  padding: 2rem 1rem;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 2rem 1rem;
+  
+  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
+  background-color: ${theme.colors.backgroundColor};
 `;
 
 const CardFourParts = (props) => {

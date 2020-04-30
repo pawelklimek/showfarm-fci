@@ -5,20 +5,24 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const active = "active";
 
-const DogScrollMenu = styled.div`
-  ${theme.effects.animation.entranceTop}
+const DogScrollMenu = styled.div`  
   ${theme.media.desktop} {
+ 
   position: absolute;
   top: 12%;
   left: 1%;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${theme.colors.backgroundColor};
+  
   width: 30%;
   height: 50%;
+  
+  background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
+  ${theme.effects.animation.entranceTop}
  }
 `;
 
@@ -29,19 +33,24 @@ const Menu = styled.div`
 
 const MenuItem = styled.div`
   position: relative;
-  color: ${theme.colors.mediumGray};
-  font-weight: 200;
+ 
+  padding-top: 1%;
+ 
   font-size: 1rem;
+  font-weight: 200;
+  color: ${theme.colors.mediumGray};
   text-decoration: none;
   cursor: pointer;
-  padding-top: 1%;
+  
   transition: all 1s ease;
   &:before {
     content: '';
     position: absolute;
     left: 50%;
     bottom: -0.25rem;
+   
     width: 100%;
+   
     height: 1px;
     background-color: ${theme.colors.darkGold};
     transform-origin: center;
@@ -61,7 +70,6 @@ const MenuItem = styled.div`
 const DogScrollNavi = () => {
     return (
         <DogScrollMenu>
-            <Menu>{""}</Menu>
             <Menu>{"Miniaturowy Owraczek Amerykański"}</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
             <Menu>{"Owraczek Australijski"}</Menu>
