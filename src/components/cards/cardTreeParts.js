@@ -7,7 +7,9 @@ const CardStyle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  
   margin: 1rem 1rem;
+  
   ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
 `;

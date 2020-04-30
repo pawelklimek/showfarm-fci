@@ -11,9 +11,13 @@ import {theme} from "../../static/layout/theme";
 const PageContent = styled.div`
   flex: 1;
   display: flex;
-  flex-direction:row;
+  flex-direction:column-reverse;
   justify-content: center;
   align-items: center;
+  
+ @media ${theme.media.deviceSize.laptop} {
+   flex-direction:row;
+ }
 `;
 
 const Left = styled.div`
@@ -42,9 +46,12 @@ const Circle = styled.div`
 const CertificationLogoWrapper = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: column;
+  }
 `;
 
 const CertificationLogo = styled.div`

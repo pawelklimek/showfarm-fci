@@ -7,8 +7,12 @@ import {CardWrapper} from "./card-shared";
 const CardStyle = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: row;
- 
+  height: 100vh;
+  flex-direction: column;
+   @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row;
+    height: auto;
+  }
   margin: 1rem 1rem;
   
   ${theme.effects.animation.entranceBottom};

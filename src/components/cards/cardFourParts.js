@@ -17,8 +17,13 @@ const CardStyle = styled.div`
 
 const Top = styled.div`  
   flex: 2;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row;
+    height: auto;
+  }
 `;
 
 const TopText = styled.div`  
@@ -55,10 +60,17 @@ const Bottom = styled.div`
   flex: 3;
   flex-basis: 50vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  
+  height: 100vh;
+  
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row-reverse;
+    height: auto;
+  }
 `;
 
-const BottomText = styled.text`  
+const BottomText = styled.div`  
   flex: 1;
   display: flex;
   justify-content: center;
@@ -84,8 +96,8 @@ const CardFourParts = (props) => {
                     </TopText>
                 </Top>
                 <Bottom>
-                    <BottomText>{props.description}</BottomText>
                     <CardImg imgUrl={props.bottomImage}/>
+                    <BottomText>{props.description}</BottomText>
                 </Bottom>
             </CardStyle>
         </CardWrapper>

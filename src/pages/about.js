@@ -36,7 +36,6 @@ const AboutPage = () => {
                         mediumImg={cardThreeMedium}
                         bigImg={cardThreeBig}
                         description={`Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
-
                 </AboutWrapper>
             </Layout>
         </div>

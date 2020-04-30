@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../../static/layout/theme"
+import {theme} from "static/layout/theme"
 import {Link} from "gatsby";
 
 const active = "active";
@@ -8,9 +8,7 @@ const active = "active";
 const MenuWrapper = styled.div`
   position: absolute;
   z-index: 1000;
-  width: 30%;
-  top: 2%;
-  left: 1%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -18,6 +16,11 @@ const MenuWrapper = styled.div`
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
   padding: 1rem 0;
+  @media ${theme.media.deviceSize.laptop} {
+    width: 500px;
+    top: 2%;
+    left: 1%;
+  }
 `;
 
 const MenuItem = styled.div`
@@ -46,10 +49,10 @@ const MenuItem = styled.div`
   }
   
   &.${active}{
-    color: ${theme.colors.darkGold};
+      color: ${theme.colors.darkGold};
     
     &:hover {
-       color: ${theme.colors.darkGold};
+      color: ${theme.colors.darkGold};
     }
   }
 `;

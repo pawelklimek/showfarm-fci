@@ -14,6 +14,12 @@ const DivTop = styled.div`
 const BlockWrapper = styled.div`
   flex: 1;
   display: flex;
+  height: 100vh;
+  flex-direction: column;
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row;
+    height: auto;
+  }
 `;
 
 const Block = styled.div`
@@ -40,12 +46,14 @@ const BlockTitle = styled.div`
   text-shadow: ${theme.effects.shadow};
 `;
 
-const Text = styled.text` 
+const Text = styled.div` 
   flex:3;
   display: flex;
   justify-content: center;
+  @media ${theme.media.deviceSize.laptop} {
+    font-size: 0.8rem;
+  }
   
-  font-size: 0.8rem;
   color: ${theme.colors.fontColorGray};
 `;
 
@@ -73,7 +81,7 @@ const PuppiesPage = () => {
                         <Separator color={theme.colors.darkGold}/>
                         <Text>W naszej hodowli mamy zasadę oceniania charakterów szczeniąt i pod tym kątem dobierania
                             ich do nowych właścicieli i ich potrzeb. Jeśli jesteś zainteresowany szczeniakiem z naszej
-                            hodowli bardzo ważne abyś podał nam opis : dlaczego ta rasa, jakie ma się warunki, czego się
+                            hodowli bardzo ważne abyś podał nam opis: dlaczego ta rasa, jakie ma się warunki, czego się
                             oczekuje od psa, co się chce z psem robić. Wszystkie podane informacje pozwolą nam wśród
                             szczeniąt wybrać tego jedynego, który charakterem będzie pasował do Twojego trybu życia i
                             dzięki temu stworzysz ze swoim psem na prawdę dobry team!</Text>

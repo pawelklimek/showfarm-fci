@@ -8,13 +8,13 @@ const SeparatorStyle = styled.div`
    
    margin: 1rem 0;
    
-   background-color: ${({color}) => color};
+   background-color: ${({separatorColor}) => separatorColor};
    box-shadow: ${theme.effects.shadow};
 `;
 
 const Separator = (props) => {
     return (
-        <SeparatorStyle color={props.color}/>
+        <SeparatorStyle separatorColor={props.color}/>
     )
 };
 

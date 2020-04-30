@@ -1,3 +1,14 @@
+export const deviceSize = {
+    mobileS: `(min-width: 320px)`,
+    mobileM: `(min-width: 375px)`,
+    mobileL: `(min-width: 425px)`,
+    tablet: `(min-width: 768px)`,
+    laptop: `(min-width: 1024px)`,
+    laptopL: `(min-width: 1024px)`,
+    desktop: `(min-width: 1440px)`,
+    desktopL: `(min-width: 2560px)`
+};
+
 export const colors = {
     darkGold: '#b29a36',
     backgroundColor: '#f2f2f2',
@@ -8,7 +19,6 @@ export const colors = {
     color3: '#592E21',
     color4: '#734b4b',
     color5: '#684D45',
-
 };
 
 export const effects = {
@@ -55,7 +65,7 @@ export const effects = {
     opacity: 1;
   }
 }
-`,entranceTop: `animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+`, entranceTop: `animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 @keyframes fade-in-top {
  0% {
     transform: translateY(-50px);
@@ -67,7 +77,7 @@ export const effects = {
   }
 }
 `
-        ,entranceBottom: `animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        , entranceBottom: `animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 @keyframes fade-in-bottom {
   0% {
     transform: translateY(50px);
@@ -90,6 +100,6 @@ export const theme = {
         regular: 300
     },
     media: {
-        desktop: '@media (min-width: 768px)'
+        deviceSize
     }
 };

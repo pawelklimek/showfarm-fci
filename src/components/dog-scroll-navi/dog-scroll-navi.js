@@ -5,13 +5,12 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const active = "active";
 
-const DogScrollMenu = styled.div`  
-  ${theme.media.desktop} {
- 
+const DogScrollMenu = styled.div`
   position: absolute;
   top: 12%;
   left: 1%;
- 
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,8 +21,8 @@ const DogScrollMenu = styled.div`
   
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
-  ${theme.effects.animation.entranceTop}
- }
+  ${theme.effects.animation.entranceTop} 
+}
 `;
 
 const Menu = styled.div`

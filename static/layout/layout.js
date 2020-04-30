@@ -14,11 +14,16 @@ const GlobalStyle = createGlobalStyle`
  }`;
 
 const LayoutWrapper = styled.div`
-background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(67,144,233,1) 0%, rgba(78,226,198,1) 90.1% );
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(67,144,233,1) 0%, rgba(78,226,198,1) 90.1% );
   margin: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-size: 1.4rem;
+  @media ${theme.media.deviceSize.laptop} {
+    font-size: 1rem;
+  }
+  
 `;
 
 const Content = styled.div`
