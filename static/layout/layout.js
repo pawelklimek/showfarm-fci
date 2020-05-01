@@ -22,6 +22,7 @@ const LayoutWrapper = styled.div`
   font-size: 1.4rem;
   @media ${theme.media.deviceSize.laptop} {
     font-size: 1rem;
+    padding: 0 5rem;
   }
   
 `;
@@ -29,7 +30,7 @@ const LayoutWrapper = styled.div`
 const Content = styled.div`
   flex-grow: 1;
   overflow-y: auto;
-  padding-top: 5%
+  padding-top: 6%
 `;
 
 const Layout = ({children}) => (

@@ -4,13 +4,16 @@ import CardFourParts from "src/components/cards/cardFourParts";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 import styled from "styled-components";
+import {theme} from "../../static/layout/theme";
 
 const DogCardWrapper = styled.div`  
   display: flex;
 `;
 
 const Left = styled.div`  
-  flex: 1;
+  @media ${theme.media.deviceSize.laptop} {
+    flex: 1;
+  } 
 `;
 const Right = styled.div`  
   flex: 2;

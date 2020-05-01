@@ -3,6 +3,13 @@ import styled from "styled-components";
 import {theme} from "../../../static/layout/theme";
 
 const FooterStyle = styled.div`
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+ 
+  left: 0;
+  bottom: 0;
+  
   display: flex;
   justify-content: center;
   align-items: center;

@@ -18,7 +18,7 @@ const MenuWrapper = styled.div`
   padding: 1rem 0;
   @media ${theme.media.deviceSize.laptop} {
     width: 500px;
-    top: 2%;
+    top: 1%;
     left: 1%;
   }
 `;

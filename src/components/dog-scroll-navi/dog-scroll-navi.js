@@ -6,22 +6,26 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 const active = "active";
 
 const DogScrollMenu = styled.div`
-  position: absolute;
-  top: 12%;
-  left: 1%;
+     display:none;
 
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @media ${theme.media.deviceSize.laptop} {
+    position: absolute;
+    top: 12%;
+    left: 1%;  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   
-  width: 30%;
-  height: 50%;
+    width: 30%;
+    height: 50%;
   
-  background-color: ${theme.colors.backgroundColor};
-  box-shadow: ${theme.effects.shadow}
-  ${theme.effects.animation.entranceTop} 
+    background-color: ${theme.colors.backgroundColor};
+    box-shadow: ${theme.effects.shadow}
+    ${theme.effects.animation.entranceTop} 
+  }
 }
 `;
 

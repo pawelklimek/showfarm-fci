@@ -20,7 +20,7 @@ const Top = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  @media ${theme.media.deviceSize.laptop} {
+  @media ${theme.media.deviceSize.tablet} {
     flex-direction: row;
     height: auto;
   }
@@ -58,13 +58,14 @@ const CardImg = styled.div`
 
 const Bottom = styled.div`  
   flex: 3;
-  flex-basis: 50vh;
+  flex-basis: 100vh;
   display: flex;
   flex-direction: column;
   
   height: 100vh;
   
-  @media ${theme.media.deviceSize.laptop} {
+  @media ${theme.media.deviceSize.tablet} {
+    flex-basis: 50vh;
     flex-direction: row-reverse;
     height: auto;
   }
