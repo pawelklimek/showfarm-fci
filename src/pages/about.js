@@ -7,7 +7,7 @@ import cardOneSmall from "static/images/about/card-1-small.jpg"
 import cartTwoSmall from "static/images/about/card-2-small.jpg"
 import cardTwoBig from "static/images/about/card-2-big.jpg"
 import cardTreeSmall from "static/images/about/card-3-small.jpg"
-import cardThreeMedium from "static/images/about/card-3-medium.jpg"
+import cardThreeMediumX from "static/images/about/card-3-medium.jpg"
 import cardThreeBig from "static/images/about/card-3-big.jpg"
 
 import CardTreeXParts from "../components/cards/cardTreeXParts";
@@ -33,7 +33,7 @@ const AboutPage = () => {
                         description={`Wiele psów z naszej hodowli spróbowało pasienia i pokazało, że psy od nas mają instynkt pasterski. Potrafią być niesamowitymi kompanami w stajennym życiu. Fantastycznie sprawdzają się na wspólne bieganie czy wycieczki rowerowe!`}/>
                     <CardTreeXParts
                         smallImg={cardTreeSmall}
-                        mediumImg={cardThreeMedium}
+                        mediumImg={cardThreeMediumX}
                         bigImg={cardThreeBig}
                         description={`Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
                 </AboutWrapper>

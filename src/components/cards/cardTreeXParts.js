@@ -5,10 +5,13 @@ import {theme} from "static/layout/theme";
 const CardStyle = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
-  
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row;
+  }
   margin: 1rem 1rem;
+  
   
   ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
@@ -20,7 +23,10 @@ const Left = styled.div`
   align-items: stretch;
   flex-direction: column;
   
-  height: 75vh;
+  height: 100vh;
+  @media ${theme.media.deviceSize.laptop} {
+    height: 75vh;
+  }
 `;
 
 const Right = styled.div`  
@@ -31,7 +37,7 @@ const Right = styled.div`
   height: 75vh;
 `;
 
-const TopText = styled.div`  
+const RightBottom = styled.div`  
   flex: 2;
   display: flex;
   flex-direction: row;
@@ -57,7 +63,7 @@ const BigImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const SmallImg = styled.div`  
+const MediumImg = styled.div`  
   flex: 0 0 50%;
   
   background-position: 50% 50%;
@@ -66,7 +72,7 @@ const SmallImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const SmallXImg = styled.div`  
+const SmallImg = styled.div`  
   flex: 0 0 50%;
   
   background-position: 50% 50%;
@@ -82,11 +88,11 @@ const CardTreeXParts = (props) => {
                 <BigImg imgUrl={props.bigImg}/>
             </Left>
             <Right direction={props.direction}>
-                <SmallImg imgUrl={props.smallImg}/>
-                <TopText>
+                <MediumImg imgUrl={props.mediumImg}/>
+                <RightBottom>
                     <Description>{props.description}</Description>
-                    <SmallXImg imgUrl={props.mediumImg}/>
-                </TopText>
+                    <SmallImg imgUrl={props.smallImg}/>
+                </RightBottom>
             </Right>
         </CardStyle>
     )

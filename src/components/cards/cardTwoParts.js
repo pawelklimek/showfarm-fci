@@ -9,7 +9,7 @@ const CardStyle = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: column;
-   @media ${theme.media.deviceSize.laptop} {
+  @media ${theme.media.deviceSize.laptop} {
     flex-direction: row;
     height: auto;
   }
@@ -25,7 +25,7 @@ const TopText = styled.div`
   flex-direction: column;
   justify-content: center;
  
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   
   background-color: ${theme.colors.backgroundColor};
 `;

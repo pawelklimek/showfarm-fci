@@ -5,9 +5,11 @@ import {theme} from "static/layout/theme";
 const CardStyle = styled.div`
   flex: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
-  
+    @media ${theme.media.deviceSize.laptop} {
+    flex-direction: row;
+  }
   margin: 1rem 1rem;
   
   ${theme.effects.animation.entranceRight};
@@ -26,8 +28,11 @@ const Left = styled.div`
 const Right = styled.div`  
   flex: 1;
   display: flex;
-  flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
-  
+  flex-direction: column-reverse;
+  align-items: stretch;
+  @media ${theme.media.deviceSize.laptop} {
+    flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
+  }
   height: 75vh;
 `;
 
