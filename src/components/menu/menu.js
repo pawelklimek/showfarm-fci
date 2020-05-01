@@ -63,7 +63,7 @@ const Menu = () => {
             <MenuWrapper>
                 <MenuItem as={Link} activeClassName={active} to="/">Showfarm</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
-                <MenuItem as={Link} disabled activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
