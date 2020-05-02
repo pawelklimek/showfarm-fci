@@ -29,6 +29,7 @@ const DogsPage = () => {
                     <Right>
                         <div id='joy'/>
                         <CardFourParts
+                            showDelay={0.4}
                             title={Dogs.Joy.name}
                             subTitle={Dogs.Joy.fullName}
                             description={Dogs.Joy.description}
@@ -37,6 +38,7 @@ const DogsPage = () => {
                         </CardFourParts>
                         <div id='dora'/>
                         <CardFourParts
+                            showDelay={0.6}
                             title={Dogs.Dora.name}
                             subTitle={Dogs.Dora.fullName}
                             description={Dogs.Dora.description}
@@ -44,6 +46,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Dora.bottomImg}/>
                         <div id='maizy'/>
                         <CardFourParts
+                            showDelay={0.8}
                             title={Dogs.Maizy.name}
                             subTitle={Dogs.Maizy.fullName}
                             description={Dogs.Maizy.description}
@@ -51,6 +54,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Maizy.bottomImg}/>
                         <div id='mora'/>
                         <CardFourParts
+                            showDelay={1}
                             title={Dogs.Mora.name}
                             subTitle={Dogs.Mora.fullName}
                             description={Dogs.Mora.description}
@@ -58,6 +62,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Mora.bottomImg}/>
                         <div id='abi'/>
                         <CardFourParts
+                            showDelay={1.2}
                             title={Dogs.Abi.name}
                             subTitle={Dogs.Abi.fullName}
                             description={Dogs.Abi.description}
@@ -65,6 +70,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Abi.bottomImg}/>
                         <div id='jaga'/>
                         <CardFourParts
+                            showDelay={1.4}
                             title={Dogs.Jaga.name}
                             subTitle={Dogs.Jaga.fullName}
                             description={Dogs.Jaga.description}
@@ -72,6 +78,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Jaga.bottomImg}/>
                         <div id='dakota'/>
                         <CardFourParts
+                            showDelay={1.6}
                             title={Dogs.Dakota.name}
                             subTitle={Dogs.Dakota.fullName}
                             description={Dogs.Dakota.description}
@@ -79,6 +86,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Dakota.bottomImg}/>
                         <div id='ruby'/>
                         <CardFourParts
+                            showDelay={1.8}
                             title={Dogs.Ruby.name}
                             subTitle={Dogs.Ruby.fullName}
                             description={Dogs.Ruby.description}
@@ -86,6 +94,7 @@ const DogsPage = () => {
                             bottomImage={Dogs.Ruby.bottomImg}/>
                         <div id='brag'/>
                         <CardFourParts
+                            showDelay={2}
                             title={Dogs.Brag.name}
                             subTitle={Dogs.Brag.fullName}
                             description={Dogs.Brag.description}

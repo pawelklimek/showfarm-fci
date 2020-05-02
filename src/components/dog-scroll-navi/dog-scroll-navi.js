@@ -2,10 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../static/layout/theme"
 import scrollTo from "gatsby-plugin-smoothscroll";
+import {HoverAnimationStyle} from "../animation/animation";
 
 const active = "active";
 
-const DogScrollMenu = styled.div`
+const DogScrollMenu = styled(HoverAnimationStyle)`
      display:none;
 
 
@@ -24,7 +25,6 @@ const DogScrollMenu = styled.div`
   
     background-color: ${theme.colors.backgroundColor};
     box-shadow: ${theme.effects.shadow}
-    ${theme.effects.animation.entranceTop} 
   }
 }
 `;
@@ -72,7 +72,7 @@ const MenuItem = styled.div`
 
 const DogScrollNavi = () => {
     return (
-        <DogScrollMenu>
+        <DogScrollMenu showDelay={0.2}>
             <Menu>{"Miniaturowy Owraczek Amerykański"}</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
             <Menu>{"Owraczek Australijski"}</Menu>

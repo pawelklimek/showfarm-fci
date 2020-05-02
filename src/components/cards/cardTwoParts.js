@@ -50,19 +50,16 @@ const CardImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const CardTwoParts = (props) => {
-    return (
-        <CardWrapper>
-            <CardStyle>
-                <CardImg imgUrl={props.imgUrl}/>
-                <TopText>
-                    <Name>{props.title}</Name>
-                    <Separator color={theme.colors.darkGold}/>
-                    <FullName>{props.subTitle}</FullName>
-                </TopText>
-            </CardStyle>
-        </CardWrapper>
-    )
-};
-
+const CardTwoParts = (props) => (
+    <CardWrapper>
+        <CardStyle>
+            <CardImg imgUrl={props.imgUrl}/>
+            <TopText>
+                <Name>{props.title}</Name>
+                <Separator color={theme.colors.darkGold}/>
+                <FullName>{props.subTitle}</FullName>
+            </TopText>
+        </CardStyle>
+    </CardWrapper>
+);
 export default CardTwoParts;

@@ -2,20 +2,22 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "static/layout/theme"
 import {Link} from "gatsby";
-
 const active = "active";
 
 const MenuWrapper = styled.div`
   position: absolute;
   z-index: 1000;
   width: 100%;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+ 
+  padding: 1rem 0;
+ 
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
-  padding: 1rem 0;
   @media ${theme.media.deviceSize.laptop} {
     width: 500px;
     top: 1%;
@@ -65,6 +67,7 @@ const Menu = () => {
                 <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>
+                <MenuItem as={Link} activeClassName={active} to="/gallery-new"> Galeria</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
             </MenuWrapper>

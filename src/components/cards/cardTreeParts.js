@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "static/layout/theme";
+import {HoverAnimationStyle} from "../animation/animation";
 
-const CardStyle = styled.div`
+const CardStyle = styled(HoverAnimationStyle)`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,6 @@ const CardStyle = styled.div`
   }
   margin: 1rem 1rem;
   
-  ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
 `;
 
@@ -30,6 +30,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column-reverse;
   align-items: stretch;
+  
   @media ${theme.media.deviceSize.laptop} {
     flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
   }
@@ -70,19 +71,18 @@ const SmallImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const CardTreeParts = (props) => {
-    return (
-        <CardStyle>
-            <Left>
-                <BigImg imgUrl={props.bigImg}/>
-            </Left>
-            <Right direction={props.direction}>
-                <SmallImg imgUrl={props.smallImg}/>
-                <TopText>
-                    <Description>{props.description}</Description>
-                </TopText>
-            </Right>
-        </CardStyle>)
-};
+const CardTreeParts = (props) => (
+    <CardStyle showDelay={props.showDelay}>
+        <Left>
+            <BigImg imgUrl={props.bigImg}/>
+        </Left>
+        <Right direction={props.direction}>
+            <SmallImg imgUrl={props.smallImg}/>
+            <TopText>
+                <Description>{props.description}</Description>
+            </TopText>
+        </Right>
+    </CardStyle>
+);
 
 export default CardTreeParts;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Layout from "static/layout/layout";
 import Separator from "src/components/separator/separator"
 import {theme} from "../../static/layout/theme";
+import {HoverAnimationStyle} from "../components/animation/animation";
 
 const Header = styled.div`
   text-shadow: ${theme.effects.shadow};
@@ -10,7 +11,7 @@ const Header = styled.div`
   font-weight: 200;
 `;
 
-const Card = styled.div`
+const Card = styled(HoverAnimationStyle)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +22,6 @@ const Card = styled.div`
   color: ${theme.colors.fontColorGray};
   box-shadow: ${theme.effects.shadow};
   background-color: ${theme.colors.backgroundColor};
-  ${theme.effects.animation.entranceRight};
 `;
 
 const Contact = styled.div`
@@ -53,10 +53,9 @@ height: 100%;
 
 const ContactPage = () => {
     return (
-        <>
             <Layout>
                 <ContentWrapper>
-                    <Card>
+                    <Card showDelay={0.2}>
                         <Header>KONTAKT</Header>
                         <Separator color={theme.colors.darkGold}/>
                         <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
@@ -71,7 +70,6 @@ const ContactPage = () => {
                     </Card>
                 </ContentWrapper>
             </Layout>
-        </>
     )
 };
 

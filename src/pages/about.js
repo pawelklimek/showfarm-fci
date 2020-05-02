@@ -23,11 +23,13 @@ const AboutPage = () => {
             <Layout>
                 <AboutWrapper>
                     <CardTreeParts
+                        showDelay={0.2}
                         smallImg={cardOneSmall}
                         bigImg={cardOneBig}
                         direction={`column-reverse`}
                         description={`Psy z naszej hodowli są kochanymi członkami rodziny, które kochają aktywność i pracę z człowiekiem! Owczarki od nas są bardzo uniwersalne gdyż sprawdzają się w psich sportach jak frisbee czy agility.Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
                     <CardTreeParts
+                        showDelay={0.4}
                         smallImg={cartTwoSmall}
                         bigImg={cardTwoBig}
                         description={`Wiele psów z naszej hodowli spróbowało pasienia i pokazało, że psy od nas mają instynkt pasterski. Potrafią być niesamowitymi kompanami w stajennym życiu. Fantastycznie sprawdzają się na wspólne bieganie czy wycieczki rowerowe!`}/>

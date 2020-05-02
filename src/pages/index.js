@@ -7,6 +7,7 @@ import certificationFCI from "static/images/showfarm/FCI.png"
 import certificationZK from "static/images/showfarm/ZK.png"
 import CardFourParts from "../components/cards/cardFourParts";
 import {theme} from "../../static/layout/theme";
+import {HoverAnimationStyle} from "../components/animation/animation";
 
 const PageContent = styled.div`
   flex: 1;
@@ -22,11 +23,12 @@ const PageContent = styled.div`
 
 const Left = styled.div`
 `;
+
 const Right = styled.div`
 flex: 2;
 `;
 
-const Circle = styled.div`
+const Circle = styled(HoverAnimationStyle)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +42,7 @@ const Circle = styled.div`
   
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
-  ${theme.effects.animation.entranceBottom};
+  // ${theme.effects.animation.entranceBottom};
 `;
 const CertificationLogoWrapper = styled.div`
   flex: 1;
@@ -68,16 +70,16 @@ const IndexPage = () => {
             <PageContent>
                 <Left>
                     <CertificationLogoWrapper>
-                        <Circle>
-                            <CertificationLogo imgUrl={certificationFCI}/>
+                        <Circle showDelay={0.2}>
+                            <CertificationLogo imgUrl={certificationFCI} />
                         </Circle>
-                        <Circle>
+                        <Circle showDelay={0.4}>
                             <CertificationLogo imgUrl={certificationZK}/>
                         </Circle>
                     </CertificationLogoWrapper>
                 </Left>
                 <Right>
-                    <CardFourParts
+                    <CardFourParts showDelay={0.6}
                         title={"SHOWFARM FCI"}
                         subTitle={`Owczarek Australijski\nMiniaturowy Owczarek Amerykański`}
                         description={`Showfarm FCI to mała domowa hodowla owczarków australijskich, która nierozłącznie wiąże się z miłością i pasją do psów. Wszystkie psy z naszej hodowli są pełnoprawnymi członkami rodziny, które mieszkają z nami i towarzyszą nam w życiu codziennym. Założycielką hodowli jestem ja, czyli Karolina Klimek. Prowadzę hodowlę w asyście doświadczonych koleżanek - Magdaleny Sołtysiak oraz Celiny Grundland. Połączyła nas miłość do owczarków, stąd wspólne dążenie do tego, aby psy pochodzące z naszej hodowli były nie tylko zdrowe i piękne, ale przede wszystkim miały zrównoważone charaktery i były kochanymi członkami rodziny!`}

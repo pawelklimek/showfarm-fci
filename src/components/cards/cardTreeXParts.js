@@ -12,8 +12,6 @@ const CardStyle = styled.div`
   }
   margin: 1rem 1rem;
   
-  
-  ${theme.effects.animation.entranceRight};
   box-shadow: ${theme.effects.shadow};
 `;
 
@@ -81,21 +79,20 @@ const SmallImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const CardTreeXParts = (props) => {
-    return (
-        <CardStyle>
-            <Left>
-                <BigImg imgUrl={props.bigImg}/>
-            </Left>
-            <Right direction={props.direction}>
-                <MediumImg imgUrl={props.mediumImg}/>
-                <RightBottom>
-                    <Description>{props.description}</Description>
-                    <SmallImg imgUrl={props.smallImg}/>
-                </RightBottom>
-            </Right>
-        </CardStyle>
-    )
-};
+const CardTreeXParts = (props) => (
+    <CardStyle>
+        <Left>
+            <BigImg imgUrl={props.bigImg}/>
+        </Left>
+        <Right direction={props.direction}>
+            <MediumImg imgUrl={props.mediumImg}/>
+            <RightBottom>
+                <Description>{props.description}</Description>
+                <SmallImg imgUrl={props.smallImg}/>
+            </RightBottom>
+        </Right>
+    </CardStyle>
+);
+
 
 export default CardTreeXParts;

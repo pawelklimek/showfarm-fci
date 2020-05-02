@@ -11,7 +11,7 @@ const CardStyle = styled.div`
   
   margin: 1rem 1rem;
   
-  ${theme.effects.animation.entranceBottom};
+  // ${theme.effects.animation.entranceBottom};
   box-shadow: ${theme.effects.shadow};
 `;
 
@@ -84,25 +84,23 @@ const BottomText = styled.div`
   background-color: ${theme.colors.backgroundColor};
 `;
 
-const CardFourParts = (props) => {
-    return (
-        <CardWrapper>
-            <CardStyle>
-                <Top>
-                    <CardImg imgUrl={props.topImage}/>
-                    <TopText>
-                        <Name>{props.title}</Name>
-                        <Separator color={theme.colors.darkGold}/>
-                        <FullName>{props.subTitle}</FullName>
-                    </TopText>
-                </Top>
-                <Bottom>
-                    <CardImg imgUrl={props.bottomImage}/>
-                    <BottomText>{props.description}</BottomText>
-                </Bottom>
-            </CardStyle>
-        </CardWrapper>
-    )
-};
+const CardFourParts = (props) => (
+    <CardWrapper showDelay={props.showDelay}>
+        <CardStyle>
+            <Top>
+                <CardImg imgUrl={props.topImage}/>
+                <TopText>
+                    <Name>{props.title}</Name>
+                    <Separator color={theme.colors.darkGold}/>
+                    <FullName>{props.subTitle}</FullName>
+                </TopText>
+            </Top>
+            <Bottom>
+                <CardImg imgUrl={props.bottomImage}/>
+                <BottomText>{props.description}</BottomText>
+            </Bottom>
+        </CardStyle>
+    </CardWrapper>
+);
 
 export default CardFourParts;

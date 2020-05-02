@@ -5,8 +5,9 @@ import {theme} from "static/layout/theme";
 import Separator from "src/components/separator/separator";
 import CardTwoParts from "src/components/cards/cardTwoParts";
 import imageUrl from "static/images/puppies/puppy-theme.jpg";
+import {HoverAnimationStyle} from "../components/animation/animation";
 
-const DivTop = styled.div`
+const DivTop = styled(HoverAnimationStyle)`
   flex: 1;
   display: flex;
 `;
@@ -22,7 +23,7 @@ const BlockWrapper = styled.div`
   }
 `;
 
-const Block = styled.div`
+const Block = styled(HoverAnimationStyle)`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -34,7 +35,6 @@ const Block = styled.div`
   
   box-shadow: ${theme.effects.shadow};
   background-color: ${theme.colors.backgroundColor};
-  ${theme.effects.animation.entranceBottom};
     @media ${theme.media.deviceSize.laptopL} {
     height:45vh;
   }
@@ -72,7 +72,7 @@ const PuppiesPage = () => {
     return (
         <div>
             <Layout>
-                <DivTop>
+                <DivTop showDelay={0.1}>
                     <CardTwoParts
                         title={'MIOT'}
                         subTitle={'Pod koniec lutego urodził nam się cudowny miot owczarków australijskich po naszej kochanej Jadze i przepięknym Bolsie! Urodziło się 5 szczeniąt - 2 suczki i 3 chłopców. Wszystkie szczeniaki w umaszczeniu blue merle.'}
@@ -80,7 +80,7 @@ const PuppiesPage = () => {
                 </DivTop>
                 <BlockWrapper>
                     <XXX>
-                        <Block>
+                        <Block showDelay={0.2}>
                             <BlockTitle>Dom</BlockTitle>
                             <Separator color={theme.colors.darkGold}/>
                             <Text>Szczególności świadomych rasy, że aussiki to psy aktywne i potrzebujące bliskiego
@@ -90,7 +90,7 @@ const PuppiesPage = () => {
                                 rodziny aby był obdarzony miłością! Bardzo cieszymy się z domów aktywnych i chcących
                                 pracować z psem!</Text>
                         </Block>
-                        <Block>
+                        <Block showDelay={0.4}>
                             <BlockTitle>Wybór psa</BlockTitle>
                             <Separator color={theme.colors.darkGold}/>
                             <Text>W naszej hodowli mamy zasadę oceniania charakterów szczeniąt i pod tym kątem
@@ -106,7 +106,7 @@ const PuppiesPage = () => {
                         </Block>
                     </XXX>
                     <XXX>
-                        <Block>
+                        <Block showDelay={0.6}>
                             <BlockTitle>Szczeniaki</BlockTitle>
                             <Separator color={theme.colors.darkGold}/>
                             <Text>W naszej hodowli kładziemy bardzo mocny nacisk na socjalizację szczeniąt dlatego już
@@ -117,7 +117,7 @@ const PuppiesPage = () => {
                                 sobie ze
                                 stresem w przyszłości.</Text>
                         </Block>
-                        <Block>
+                        <Block showDelay={0.8}>
                             <BlockTitle>Rodzice</BlockTitle>
                             <Separator color={theme.colors.darkGold}/>
                             <Text>Bardzo poważne podchodzimy do naszych planów hodowlanych ponieważ najważniejsze dla
