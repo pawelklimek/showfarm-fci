@@ -11,16 +11,21 @@ const GlobalStyle = createGlobalStyle`
   overflow:hidden;
   font-family: 'Manrope';
   border-radius: 1px;
+  color: ${theme.colors.fontColorGray}
  }`;
 
 const LayoutWrapper = styled.div`
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(67,144,233,1) 0%, rgba(78,226,198,1) 90.1% );
+
+
+background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 2.9%, rgba(94,46,165,1) 102.1% );
+
+  
   margin: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
   font-size: 1.4rem;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     font-size: 1rem;
     padding: 0 5rem;
   }
@@ -30,7 +35,7 @@ const LayoutWrapper = styled.div`
 const Content = styled.div`
   flex-grow: 1;
   overflow-y: auto;
-  padding-top: 6%
+  padding-top: 4%
 `;
 
 const Layout = ({children}) => (

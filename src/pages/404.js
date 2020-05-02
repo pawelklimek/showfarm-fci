@@ -5,6 +5,7 @@ const PuppiesPage = () => {
     return (
         <div>
             <Layout>
+                BRAK STRONY
             </Layout>
         </div>
     )

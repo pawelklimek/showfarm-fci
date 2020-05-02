@@ -16,7 +16,7 @@ const PageContent = styled.div`
   justify-content: center;
   align-items: center;
   
- @media ${theme.media.deviceSize.laptop} {
+ ${theme.media.deviceSize.laptop} {
    flex-direction:row;
  }
 `;
@@ -42,7 +42,6 @@ const Circle = styled(HoverAnimationStyle)`
   
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow}
-  // ${theme.effects.animation.entranceBottom};
 `;
 const CertificationLogoWrapper = styled.div`
   flex: 1;
@@ -50,7 +49,7 @@ const CertificationLogoWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: column;
   }
 `;

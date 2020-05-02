@@ -8,7 +8,7 @@ const CardStyle = styled(HoverAnimationStyle)`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-    @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: row;
   }
   margin: 1rem 1rem;
@@ -31,7 +31,7 @@ const Right = styled.div`
   flex-direction: column-reverse;
   align-items: stretch;
   
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
   }
   height: 75vh;
@@ -49,7 +49,6 @@ const TopText = styled.div`
 `;
 
 const Description = styled.div`  
-  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
 `;
 

@@ -10,7 +10,7 @@ import cardTreeSmall from "static/images/about/card-3-small.jpg"
 import cardThreeMediumX from "static/images/about/card-3-medium.jpg"
 import cardThreeBig from "static/images/about/card-3-big.jpg"
 
-import CardTreeXParts from "../components/cards/cardTreeXParts";
+import AboutCard from "../components/cards/about-card/about-card";
 
 const AboutWrapper = styled.div`  
   display: flex;
@@ -33,7 +33,7 @@ const AboutPage = () => {
                         smallImg={cartTwoSmall}
                         bigImg={cardTwoBig}
                         description={`Wiele psów z naszej hodowli spróbowało pasienia i pokazało, że psy od nas mają instynkt pasterski. Potrafią być niesamowitymi kompanami w stajennym życiu. Fantastycznie sprawdzają się na wspólne bieganie czy wycieczki rowerowe!`}/>
-                    <CardTreeXParts
+                    <AboutCard
                         smallImg={cardTreeSmall}
                         mediumImg={cardThreeMediumX}
                         bigImg={cardThreeBig}

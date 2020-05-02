@@ -17,7 +17,7 @@ const BlockWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @media ${theme.media.deviceSize.laptopL} {
+  ${theme.media.deviceSize.laptopL} {
     flex-direction: row;
     height: auto;
   }
@@ -35,7 +35,7 @@ const Block = styled(HoverAnimationStyle)`
   
   box-shadow: ${theme.effects.shadow};
   background-color: ${theme.colors.backgroundColor};
-    @media ${theme.media.deviceSize.laptopL} {
+  ${theme.media.deviceSize.laptopL} {
     height:45vh;
   }
 `;
@@ -44,7 +44,6 @@ const BlockTitle = styled.div`
   margin-bottom: -0.5rem;
   
   font-size: 2rem;
-  color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
@@ -52,18 +51,19 @@ const Text = styled.div`
   flex:3;
   display: flex;
   justify-content: center;
-  @media ${theme.media.deviceSize.laptop} {
+ 
+  ${theme.media.deviceSize.laptop} {
     font-size: 0.8rem;
   }
   
-  color: ${theme.colors.fontColorGray};
+  // color: ${theme.colors.fontColorGray};
 `;
 
 const XXX = styled.div` 
   flex:1;
   display: flex;
   flex-direction: column;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: row;
   }
 `;

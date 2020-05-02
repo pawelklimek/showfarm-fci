@@ -14,11 +14,11 @@ const MenuWrapper = styled.div`
   justify-content: center;
   align-items: center;
  
-  padding: 1rem 0;
+  padding: 0.5rem 0;
  
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     width: 500px;
     top: 1%;
     left: 1%;
@@ -27,12 +27,12 @@ const MenuWrapper = styled.div`
 
 const MenuItem = styled.div`
   position: relative;
-  color: ${theme.colors.fontColorGray};
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
   margin-right:3%;
-
+  
+  color: ${theme.colors.fontColorGray};
   &:before {
     content: '';
     position: absolute;
@@ -67,7 +67,6 @@ const Menu = () => {
                 <MenuItem as={Link} activeClassName={active} to="/dogs">Psy</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/puppies">Szczeniaki</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/gallery"> Galeria</MenuItem>
-                <MenuItem as={Link} activeClassName={active} to="/gallery-new"> Galeria</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/about">O Nas</MenuItem>
                 <MenuItem as={Link} activeClassName={active} to="/contact">Kontakt</MenuItem>
             </MenuWrapper>

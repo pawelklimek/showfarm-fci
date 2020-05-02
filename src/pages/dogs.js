@@ -11,7 +11,7 @@ const DogCardWrapper = styled.div`
 `;
 
 const Left = styled.div`  
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex: 1;
   } 
 `;

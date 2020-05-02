@@ -20,7 +20,7 @@ const Top = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  @media ${theme.media.deviceSize.tablet} {
+  ${theme.media.deviceSize.tablet} {
     flex-direction: row;
     height: auto;
   }
@@ -38,12 +38,11 @@ const TopText = styled.div`
 
 const Name = styled.div`  
   font-size: 2rem;
-  color:  ${theme.colors.fontColorGray};
+  color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
 const FullName = styled.div`  
-  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
 `;
 
@@ -64,7 +63,7 @@ const Bottom = styled.div`
   
   height: 100vh;
   
-  @media ${theme.media.deviceSize.tablet} {
+  ${theme.media.deviceSize.tablet} {
     flex-basis: 50vh;
     flex-direction: row-reverse;
     height: auto;
@@ -79,7 +78,6 @@ const BottomText = styled.div`
 
   padding: 2rem 1rem;
   
-  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
   background-color: ${theme.colors.backgroundColor};
 `;

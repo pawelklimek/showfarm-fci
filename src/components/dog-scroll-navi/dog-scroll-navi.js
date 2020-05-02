@@ -7,22 +7,22 @@ import {HoverAnimationStyle} from "../animation/animation";
 const active = "active";
 
 const DogScrollMenu = styled(HoverAnimationStyle)`
-     display:none;
-
-
-  @media ${theme.media.deviceSize.laptop} {
+  display:none;
+ 
+  ${theme.media.deviceSize.laptop} {
     position: absolute;
-    top: 12%;
-    left: 1%;  
+    top:30%;
+    left: 6%;  
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  
-    width: 30%;
-    height: 50%;
-  
+    
+    padding: 1rem 0;  
+    
+    width: 23%;
+    height: 40%;
+    
     background-color: ${theme.colors.backgroundColor};
     box-shadow: ${theme.effects.shadow}
   }
@@ -31,7 +31,7 @@ const DogScrollMenu = styled(HoverAnimationStyle)`
 
 const Menu = styled.div`
   padding-top: 1%;
-  white-space: pre-wrap;
+  //white-space: pre-wrap;
 `;
 
 const MenuItem = styled.div`
@@ -41,10 +41,9 @@ const MenuItem = styled.div`
  
   font-size: 1rem;
   font-weight: 200;
-  color: ${theme.colors.mediumGray};
   text-decoration: none;
   cursor: pointer;
-  
+  color: ${theme.colors.mediumGray};
   transition: all 1s ease;
   &:before {
     content: '';

@@ -6,6 +6,7 @@ import {theme} from "../../static/layout/theme";
 import {HoverAnimationStyle} from "../components/animation/animation";
 
 const Header = styled.div`
+  color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
   font-size: 2rem;
   font-weight: 200;
@@ -19,7 +20,6 @@ const Card = styled(HoverAnimationStyle)`
   
   padding: 1rem;
   
-  color: ${theme.colors.fontColorGray};
   box-shadow: ${theme.effects.shadow};
   background-color: ${theme.colors.backgroundColor};
 `;
@@ -27,8 +27,8 @@ const Card = styled(HoverAnimationStyle)`
 const Contact = styled.div`
    margin: 2px;
   
-   text-align: center;
    color: ${theme.colors.fontColorGray};
+   text-align: center;
    text-decoration: none;
 `;
 
@@ -37,6 +37,7 @@ const ContactLink = styled.a`
     text-align: center;
     transition: all 0.3s ease;
     color: ${theme.colors.fontColorGray};
+
     &:hover {
       color: #3b5998;
     }

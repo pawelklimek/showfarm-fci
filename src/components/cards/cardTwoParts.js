@@ -3,20 +3,20 @@ import styled from "styled-components";
 import Separator from "../separator/separator";
 import {theme} from "static/layout/theme";
 import {CardWrapper} from "./card-shared";
+import {HoverAnimationStyle} from "../animation/animation";
 
-const CardStyle = styled.div`
+const CardStyle = styled(HoverAnimationStyle)`
   flex: 1;
   display: flex;
   height: 100vh;
   flex-direction: column;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: row;
     height: auto;
   }
   margin: 1rem 1rem;
   
-  ${theme.effects.animation.entranceBottom};
-  box-shadow: ${theme.effects.shadow};
+    box-shadow: ${theme.effects.shadow};
 `;
 
 const TopText = styled.div`  
@@ -32,12 +32,10 @@ const TopText = styled.div`
 
 const Name = styled.div`  
   font-size: 2rem;
-  color:  ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
 `;
 
 const FullName = styled.div`  
-  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
 `;
 
@@ -52,7 +50,7 @@ const CardImg = styled.div`
 
 const CardTwoParts = (props) => (
     <CardWrapper>
-        <CardStyle>
+        <CardStyle showDelay={0.2}>
             <CardImg imgUrl={props.imgUrl}/>
             <TopText>
                 <Name>{props.title}</Name>

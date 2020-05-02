@@ -7,7 +7,7 @@ const CardStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     flex-direction: row;
   }
   margin: 1rem 1rem;
@@ -22,7 +22,7 @@ const Left = styled.div`
   flex-direction: column;
   
   height: 100vh;
-  @media ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptop} {
     height: 75vh;
   }
 `;
@@ -48,7 +48,6 @@ const Description = styled.div`
   align-self: center;
   
   padding: 1rem 1rem;
-  color:  ${theme.colors.fontColorGray};
   white-space: pre-wrap;
 `;
 
@@ -79,7 +78,7 @@ const SmallImg = styled.div`
   background-repeat: no-repeat;
 `;
 
-const CardTreeXParts = (props) => (
+const AboutCard = (props) => (
     <CardStyle>
         <Left>
             <BigImg imgUrl={props.bigImg}/>
@@ -95,4 +94,4 @@ const CardTreeXParts = (props) => (
 );
 
 
-export default CardTreeXParts;
+export default AboutCard;
