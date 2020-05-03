@@ -5,7 +5,7 @@ export const deviceSize = {
 };
 
 export const colors = {
-    detailColor: '#E54F08',
+    detailColor: '#D77926',
     backgroundColor: '#f2f2f2',
     mediumGray: '#888589',
     fontColorGray: '#333f4c',
