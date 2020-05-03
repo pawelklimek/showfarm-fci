@@ -19,8 +19,9 @@ const GlobalStyle = createGlobalStyle`
  }`;
 
 const LayoutWrapper = styled.div`
- 
-  background-image: radial-gradient( circle farthest-corner at 0.2% 1.8%,  rgba(255,90,8,1) 0%, rgba(88,0,0,1) 100.2% );  
+  
+  background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+
   margin: 0;
   display: flex;
   flex-direction: column;
