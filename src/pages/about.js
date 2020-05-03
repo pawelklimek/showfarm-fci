@@ -27,7 +27,7 @@ const AboutPage = () => {
                         smallImg={cardOneSmall}
                         bigImg={cardOneBig}
                         direction={`column-reverse`}
-                        description={`Psy z naszej hodowli są kochanymi członkami rodziny, które kochają aktywność i pracę z człowiekiem! Owczarki od nas są bardzo uniwersalne gdyż sprawdzają się w psich sportach jak frisbee czy agility.Miło mi też poinformować, że psy od nas pracują również w dogoterapii! Nasze psy mają różne epizody w telewizji jak granie w spotach reklamowych czy branie udziału w psich eventach.`}/>
+                        description={`Psy z naszej hodowli są kochanymi członkami rodziny, które kochają aktywność i pracę z człowiekiem! Owczarki od nas są bardzo uniwersalne gdyż sprawdzają się w psich sportach jak frisbee czy agility.`}/>
                     <CardTreeParts
                         showDelay={0.4}
                         smallImg={cartTwoSmall}

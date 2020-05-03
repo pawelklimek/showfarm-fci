@@ -55,8 +55,6 @@ const Text = styled.div`
   ${theme.media.deviceSize.laptop} {
     font-size: 0.8rem;
   }
-  
-  // color: ${theme.colors.fontColorGray};
 `;
 
 const XXX = styled.div` 
@@ -82,33 +80,31 @@ const PuppiesPage = () => {
                     <XXX>
                         <Block showDelay={0.2}>
                             <BlockTitle>Dom</BlockTitle>
-                            <Separator color={theme.colors.darkGold}/>
-                            <Text>Szczególności świadomych rasy, że aussiki to psy aktywne i potrzebujące bliskiego
-                                kontaktu
-                                ze swoim opiekunem. Zależy nam, że każdy pies z naszej hodowli był traktowany jak
+                            <Separator color={theme.colors.detailColor}/>
+                            <Text>Dla naszych szczeniaków poszukujemy domów w
+                                szczególności świadomych rasy oraz tego że aussiki to psy aktywne i
+                                potrzebujące bliskiego kontaktu ze swoim opiekunem. Zależy nam na
+                                tym aby każdy pies z naszej hodowl był traktowany jak
                                 członek
                                 rodziny aby był obdarzony miłością! Bardzo cieszymy się z domów aktywnych i chcących
-                                pracować z psem!</Text>
+                                pracować z psem!`</Text>
                         </Block>
                         <Block showDelay={0.4}>
                             <BlockTitle>Wybór psa</BlockTitle>
-                            <Separator color={theme.colors.darkGold}/>
-                            <Text>W naszej hodowli mamy zasadę oceniania charakterów szczeniąt i pod tym kątem
-                                dobierania
-                                ich do nowych właścicieli i ich potrzeb. Jeśli jesteś zainteresowany szczeniakiem z
-                                naszej
-                                hodowli bardzo ważne abyś podał nam opis: dlaczego ta rasa, jakie ma się warunki, czego
-                                się
-                                oczekuje od psa, co się chce z psem robić. Wszystkie podane informacje pozwolą nam wśród
-                                szczeniąt wybrać tego jedynego, który charakterem będzie pasował do Twojego trybu życia
-                                i
-                                dzięki temu stworzysz ze swoim psem na prawdę dobry team!</Text>
+                            <Separator color={theme.colors.detailColor}/>
+                            <Text>W naszej hodowli mamy zasadę oceniania charakterów szczeniąt i pod tym
+                                kątem dobierania ich do nowych właścicieli, ich możliwości i potrzeb. Jeśli
+                                jesteś zainteresowany szczeniakiem z naszej hodowli bardzo ważne abyś
+                                podał nam opis: dlaczego interesuje Cię ta rasa, jakie masz się warunki, czego się oczekujesz od psa,
+                                co się chcesz z psem robić. Wszystkie podane informacje pozwolą nam
+                                wśród szczeniąt wybrać tego jedynego, który charakterem będzie pasował
+                                do Twojego trybu życia i dzięki temu stworzysz ze swoim psem naprawdę dobry team!</Text>
                         </Block>
                     </XXX>
                     <XXX>
                         <Block showDelay={0.6}>
                             <BlockTitle>Szczeniaki</BlockTitle>
-                            <Separator color={theme.colors.darkGold}/>
+                            <Separator color={theme.colors.detailColor}/>
                             <Text>W naszej hodowli kładziemy bardzo mocny nacisk na socjalizację szczeniąt dlatego już
                                 od
                                 pierwszych dni podajemy szczeniaki wczesnej stymulacji neurologicznej. Gdy podrosną
@@ -119,7 +115,7 @@ const PuppiesPage = () => {
                         </Block>
                         <Block showDelay={0.8}>
                             <BlockTitle>Rodzice</BlockTitle>
-                            <Separator color={theme.colors.darkGold}/>
+                            <Separator color={theme.colors.detailColor}/>
                             <Text>Bardzo poważne podchodzimy do naszych planów hodowlanych ponieważ najważniejsze dla
                                 nas
                                 jest zdrowie i charakter u owczarka. Zawsze staramy się dobierać psy tak aby pod każdym

@@ -58,7 +58,7 @@ const ContactPage = () => {
                 <ContentWrapper>
                     <Card showDelay={0.2}>
                         <Header>KONTAKT</Header>
-                        <Separator color={theme.colors.darkGold}/>
+                        <Separator color={theme.colors.detailColor}/>
                         <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
                         <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów.</Contact>
                         <br/>

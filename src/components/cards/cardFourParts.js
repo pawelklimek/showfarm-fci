@@ -89,7 +89,7 @@ const CardFourParts = (props) => (
                 <CardImg imgUrl={props.topImage}/>
                 <TopText>
                     <Name>{props.title}</Name>
-                    <Separator color={theme.colors.darkGold}/>
+                    <Separator color={theme.colors.detailColor}/>
                     <FullName>{props.subTitle}</FullName>
                 </TopText>
             </Top>

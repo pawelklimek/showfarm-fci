@@ -11,7 +11,7 @@ const DogScrollMenu = styled(HoverAnimationStyle)`
  
   ${theme.media.deviceSize.laptop} {
     position: absolute;
-    top:30%;
+    top:29%;
     left: 6%;  
     align-items: center;
     display: flex;
@@ -21,7 +21,7 @@ const DogScrollMenu = styled(HoverAnimationStyle)`
     padding: 1rem 0;  
     
     width: 23%;
-    height: 40%;
+    height: 42%;
     
     background-color: ${theme.colors.backgroundColor};
     box-shadow: ${theme.effects.shadow}
@@ -53,7 +53,7 @@ const MenuItem = styled.div`
     width: 100%;
    
     height: 1px;
-    background-color: ${theme.colors.darkGold};
+    background-color: ${theme.colors.detailColor};
     transform-origin: center;
     transform: translate(-50%, 0) scaleX(0);
     transition: transform 0.3s ease-in-out;
@@ -78,6 +78,7 @@ const DogScrollNavi = () => {
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dora')}>Dora</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#mora')}>Mora</MenuItem>
+            <MenuItem activeClassName={active} onClick={() => scrollTo('#abi')}>Abi</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#jaga')}>Jaga</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dakota')}>Dakota</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#ruby')}>Ruby</MenuItem>

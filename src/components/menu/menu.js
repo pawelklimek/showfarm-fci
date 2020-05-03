@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "static/layout/theme"
 import {Link} from "gatsby";
+
 const active = "active";
 
 const MenuWrapper = styled.div`
@@ -27,36 +28,20 @@ const MenuWrapper = styled.div`
 
 const MenuItem = styled.div`
   position: relative;
+ 
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
   margin: 0 1%;
-        text-shadow: ${theme.effects.shadow};
-
   color: ${theme.colors.fontColorGray};
-  &:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -0.25rem;
-    width: 100%;
-    height: 1px;
-    background-color: ${theme.colors.darkGold};
-    transform-origin: center;
-    transform: translate(-50%, 0) scaleX(0);
-    transition: transform 0.3s ease-in-out;
+  text-shadow: ${theme.effects.shadow};
+ 
+  transition: all 1s ease; 
+  &.${active} {
+      color: ${theme.colors.detailColor};
   }
-
-  &:hover::before {
-    transform: translate(-50%, 0) scaleX(1);
-  }
-  
-  &.${active}{
-      color: ${theme.colors.darkGold};
-    
-    &:hover {
-      color: ${theme.colors.darkGold};
-    }
+  &:hover {
+      color: ${theme.colors.mediumGray};
   }
 `;
 

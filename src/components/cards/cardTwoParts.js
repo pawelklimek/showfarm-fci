@@ -54,7 +54,7 @@ const CardTwoParts = (props) => (
             <CardImg imgUrl={props.imgUrl}/>
             <TopText>
                 <Name>{props.title}</Name>
-                <Separator color={theme.colors.darkGold}/>
+                <Separator color={theme.colors.detailColor}/>
                 <FullName>{props.subTitle}</FullName>
             </TopText>
         </CardStyle>
