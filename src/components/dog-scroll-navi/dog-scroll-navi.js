@@ -31,7 +31,6 @@ const DogScrollMenu = styled(HoverAnimationStyle)`
 
 const Menu = styled.div`
   padding-top: 1%;
-  //white-space: pre-wrap;
 `;
 
 const MenuItem = styled.div`

@@ -5,7 +5,7 @@ export const deviceSize = {
 };
 
 export const colors = {
-    darkGold: '#b29a36',
+    darkGold: '#3db2e9',
     backgroundColor: '#f2f2f2',
     mediumGray: '#888589',
     fontColorGray: '#474448',

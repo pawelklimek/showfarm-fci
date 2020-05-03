@@ -19,7 +19,7 @@ const MenuWrapper = styled.div`
   background-color: ${theme.colors.backgroundColor};
   box-shadow: ${theme.effects.shadow};
   ${theme.media.deviceSize.laptop} {
-    width: 500px;
+    width: 450px;
     top: 1%;
     left: 1%;
   }
@@ -30,8 +30,9 @@ const MenuItem = styled.div`
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
-  margin-right:3%;
-  
+  margin: 0 1%;
+        text-shadow: ${theme.effects.shadow};
+
   color: ${theme.colors.fontColorGray};
   &:before {
     content: '';

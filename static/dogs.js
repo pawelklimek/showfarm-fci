@@ -8,7 +8,7 @@ import Dakota1 from "static/images/dogs/dakota1.jpg";
 import Dakota2 from "static/images/dogs/dakota2.jpg";
 import Ruby1 from "static/images/dogs/ruby1.jpg";
 import Ruby2 from "static/images/dogs/ruby2.jpg";
-import Jaga1 from "static/images/dogs/jaga1.png";
+import Jaga1 from "static/images/dogs/jaga1.jpg";
 import Jaga2 from "static/images/dogs/jaga2.jpg";
 import Mora1 from "static/images/dogs/mora1.jpg";
 import Mora2 from "static/images/dogs/mora2.jpg";
