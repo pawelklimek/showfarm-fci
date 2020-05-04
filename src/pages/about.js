@@ -15,6 +15,7 @@ import AboutCard from "../components/cards/about-card/about-card";
 const AboutWrapper = styled.div`  
   display: flex;
   flex-direction: column;
+  margin-bottom: 10rem;
 `;
 
 const AboutPage = () => {
@@ -32,6 +33,7 @@ const AboutPage = () => {
                         showDelay={0.4}
                         smallImg={cartTwoSmall}
                         bigImg={cardTwoBig}
+                        direction={`column`}
                         description={`Wiele psów z naszej hodowli spróbowało pasienia i pokazało, że psy od nas mają instynkt pasterski. Potrafią być niesamowitymi kompanami w stajennym życiu. Fantastycznie sprawdzają się na wspólne bieganie czy wycieczki rowerowe!`}/>
                     <AboutCard
                         smallImg={cardTreeSmall}

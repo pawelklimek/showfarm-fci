@@ -12,7 +12,7 @@ const CardStyle = styled.div`
   }
   margin: 1rem 1rem;
   
-  box-shadow: ${theme.effects.shadow};
+  // box-shadow: ${theme.effects.shadow};
 `;
 
 const Left = styled.div`  
@@ -40,15 +40,19 @@ const RightBottom = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
-  background-color: ${theme.colors.backgroundColor};
 `;
 
 const Description = styled.div`  
-  align-self: center;
-  
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+ 
   padding: 1rem 1rem;
+ 
   white-space: pre-wrap;
+  background-color: ${theme.colors.backgroundColor};
+  margin: 0.5rem 0.5rem 0 0.5rem; 
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const BigImg = styled.div`  
@@ -58,6 +62,9 @@ const BigImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
+
+  margin: 0 0.5rem; 
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const MediumImg = styled.div`  
@@ -67,6 +74,8 @@ const MediumImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
+  margin:0 0 0.5rem 0.5rem; 
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const SmallImg = styled.div`  
@@ -76,6 +85,9 @@ const SmallImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
+ 
+  margin:0.5rem 0 0 0.5rem; 
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const AboutCard = (props) => (

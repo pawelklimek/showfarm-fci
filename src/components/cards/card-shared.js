@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import {HoverAnimationStyle} from "../animation/animation";
 
-export const CardWrapper = styled(HoverAnimationStyle)` 
+export const CardWrapper = styled.div` 
   flex: 2;
   display: flex;
 `;

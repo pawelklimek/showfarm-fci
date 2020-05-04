@@ -28,20 +28,40 @@ const MenuWrapper = styled.div`
 
 const MenuItem = styled.div`
   position: relative;
- 
   font-weight: 200;
   font-size: 1rem;
   text-decoration: none;
   margin: 0 1%;
-  color: ${theme.colors.fontColorGray};
   text-shadow: ${theme.effects.shadow};
- 
-  transition: all 1s ease; 
+
+  transition: transform 0.3s ease-in-out;
+
+  color: ${theme.colors.fontColorGray};
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.25rem;
+    width: 100%;
+    height: 1px;
+    background-color: ${theme.colors.fontColorGray};
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+  }
+  
   &.${active} {
       color: ${theme.colors.detailColor};
+      &:hover {
+      color: ${theme.colors.detailColor};
+  }
   }
   &:hover {
-      color: ${theme.colors.mediumGray};
+      color: ${theme.colors.fontColorGray};
   }
 `;
 

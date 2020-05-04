@@ -12,8 +12,6 @@ const CardStyle = styled(HoverAnimationStyle)`
     flex-direction: row;
   }
   margin: 1rem 1rem;
-  
-  box-shadow: ${theme.effects.shadow};
 `;
 
 const Left = styled.div`  
@@ -21,8 +19,9 @@ const Left = styled.div`
   display: flex;
   align-items: stretch;
   flex-direction: column;
-
   height: 75vh;
+ 
+  margin:  0 0.5rem; 
 `;
 
 const Right = styled.div`  
@@ -34,6 +33,7 @@ const Right = styled.div`
   ${theme.media.deviceSize.laptop} {
     flex-direction: ${({direction}) => direction === 'column-reverse' ? 'column-reverse' : 'column'};
   }
+ 
   height: 75vh;
 `;
 
@@ -46,6 +46,9 @@ const TopText = styled.div`
   padding: 1rem 1rem;
   
   background-color: ${theme.colors.backgroundColor};
+ 
+  margin:  ${({direction}) => direction === 'column' ? "0.5rem 0 0 0.5rem" :  "0 0 0.5rem 0.5rem"};
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const Description = styled.div`  
@@ -59,6 +62,7 @@ const BigImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const SmallImg = styled.div`  
@@ -68,6 +72,10 @@ const SmallImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl});
   background-size: cover;
   background-repeat: no-repeat;
+
+  margin:  ${({direction}) => direction === 'column' ? "0 0 0.5rem 0.5rem" :  "0.5rem 0 0 0.5rem"};
+
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const CardTreeParts = (props) => (
@@ -76,8 +84,8 @@ const CardTreeParts = (props) => (
             <BigImg imgUrl={props.bigImg}/>
         </Left>
         <Right direction={props.direction}>
-            <SmallImg imgUrl={props.smallImg}/>
-            <TopText>
+            <SmallImg imgUrl={props.smallImg} direction={props.direction}/>
+            <TopText  direction={props.direction}>
                 <Description>{props.description}</Description>
             </TopText>
         </Right>
