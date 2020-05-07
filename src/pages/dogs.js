@@ -8,6 +8,7 @@ import {theme} from "../../static/layout/theme";
 
 const DogCardWrapper = styled.div`  
   display: flex;
+  margin-bottom: 3rem;
 `;
 
 const Left = styled.div`  

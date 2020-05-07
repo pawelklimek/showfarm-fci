@@ -15,7 +15,7 @@ import AboutCard from "../components/cards/about-card/about-card";
 const AboutWrapper = styled.div`  
   display: flex;
   flex-direction: column;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem
 `;
 
 const AboutPage = () => {
