@@ -9,10 +9,10 @@ const active = "active";
 const DogScrollMenu = styled(HoverAnimationStyle)`
   display:none;
  
-  ${theme.media.deviceSize.laptop} {
+  ${theme.media.deviceSize.laptopL} {
     position: absolute;
     top:29%;
-    left: 6%;  
+    left: 2%;  
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -20,17 +20,19 @@ const DogScrollMenu = styled(HoverAnimationStyle)`
     
     padding: 1rem 0;  
     
-    width: 23%;
-    height: 42%;
+    width: 13%;
     
     background-color: ${theme.colors.backgroundColor};
-    box-shadow: ${theme.effects.shadow}
+    box-shadow: ${theme.effects.shadow};
+    
+    z-index: 1000;
   }
 }
 `;
 
 const Menu = styled.div`
   padding-top: 1%;
+  text-align: center;
 `;
 
 const MenuItem = styled.div`
@@ -71,9 +73,9 @@ const MenuItem = styled.div`
 const DogScrollNavi = () => {
     return (
         <DogScrollMenu showDelay={0.2}>
-            <Menu>{"Miniaturowy Owraczek Amerykański"}</Menu>
+            <Menu>{"Miniaturowy Owczarek Amerykański"}</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
-            <Menu>{"Owraczek Australijski"}</Menu>
+            <Menu>{"Owczarek Australijski"}</Menu>
             <Menu>Suki:</Menu>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#dora')}>Dora</MenuItem>
             <MenuItem activeClassName={active} onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>

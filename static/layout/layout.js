@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   overflow:hidden;
 
-
   font-family: "Manrope"; 
   font-style: normal;
 
@@ -34,9 +33,15 @@ const LayoutWrapper = styled.div`
 `;
 
 const Content = styled.div`
+  align-self: center;
   flex-grow: 1;
   overflow-y: auto;
-  padding-top: 4%
+  ::-webkit-scrollbar {
+  display: none;
+  }
+  -ms-overflow-style: none;
+  padding-top: 4%;
+  max-width: 1200px;
 `;
 
 const Layout = ({children}) => (

@@ -44,10 +44,11 @@ const MenuItem = styled.div`
     bottom: -0.25rem;
     width: 100%;
     height: 1px;
-    background-color: ${theme.colors.fontColorGray};
+    background-color: ${theme.colors.detailColor};
     transform-origin: center;
     transform: translate(-50%, 0) scaleX(0);
     transition: transform 0.3s ease-in-out;
+    box-shadow: ${theme.effects.shadow};
   }
 
   &:hover::before {

@@ -4,20 +4,13 @@ import CardFourParts from "src/components/cards/cardFourParts";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
 import styled from "styled-components";
-import {theme} from "../../static/layout/theme";
 
 const DogCardWrapper = styled.div`  
   display: flex;
   margin-bottom: 3rem;
 `;
 
-const Left = styled.div`  
-  ${theme.media.deviceSize.laptop} {
-    flex: 1;
-  } 
-`;
 const Right = styled.div`  
-  flex: 2;
 `;
 
 const DogsPage = () => {
@@ -26,7 +19,6 @@ const DogsPage = () => {
             <Layout>
                 <DogCardWrapper>
                     <DogScrollNavi/>
-                    <Left/>
                     <Right>
                         <div id='joy'/>
                         <CardFourParts
