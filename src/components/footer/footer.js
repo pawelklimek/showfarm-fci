@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../../static/layout/theme";
+import {theme} from "static/layout/theme";
 
 const FooterStyle = styled.div`
   z-index: 1000;

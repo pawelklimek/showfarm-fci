@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
 import Layout from "static/layout/layout";
 import Separator from "src/components/separator/separator"
-import {theme} from "../../static/layout/theme";
-import {HoverAnimationStyle} from "../components/animation/animation";
+import {theme} from "static/layout/theme";
+import {HoverAnimationStyle} from "src/components/animation/animation";
 
 const Header = styled.div`
   color: ${theme.colors.fontColorGray};

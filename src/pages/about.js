@@ -1,16 +1,18 @@
-import React from "react"
+import React from "react";
 import Layout from "static/layout/layout";
-import CardTreeParts from "../components/cards/cardTreeParts";
 import styled from "styled-components";
-import cardOneBig from "static/images/about/card-1-big.jpg"
-import cardOneSmall from "static/images/about/card-1-small.jpg"
-import cartTwoSmall from "static/images/about/card-2-small.jpg"
-import cardTwoBig from "static/images/about/card-2-big.jpg"
-import cardTreeSmall from "static/images/about/card-3-small.jpg"
-import cardThreeMediumX from "static/images/about/card-3-medium.jpg"
-import cardThreeBig from "static/images/about/card-3-big.jpg"
 
-import AboutCard from "../components/cards/about-card/about-card";
+import AboutCard from "src/components/cards/about-card/about-card";
+import CardTreeParts from "src/components/cards/cardTreeParts";
+
+import cardOneBig from "static/images/about/card-1-big.jpg";
+import cardOneSmall from "static/images/about/card-1-small.jpg";
+import cartTwoSmall from "static/images/about/card-2-small.jpg";
+import cardTwoBig from "static/images/about/card-2-big.jpg";
+import cardTreeSmall from "static/images/about/card-3-small.jpg";
+import cardThreeMediumX from "static/images/about/card-3-medium.jpg";
+import cardThreeBig from "static/images/about/card-3-big.jpg";
+
 
 const AboutWrapper = styled.div`  
   display: flex;

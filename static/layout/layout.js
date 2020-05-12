@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import styled, {createGlobalStyle, ThemeProvider} from "styled-components"
 import {theme} from "./theme";
 import Menu from "../../src/components/menu/menu";
@@ -12,9 +12,9 @@ const GlobalStyle = createGlobalStyle`
 
   font-family: "Manrope"; 
   font-style: normal;
-
   border-radius: 1px;
   color: ${theme.colors.fontColorGray}
+  scroll-behavior: smooth;  
  }`;
 
 const LayoutWrapper = styled.div`
