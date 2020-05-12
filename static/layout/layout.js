@@ -36,12 +36,25 @@ const Content = styled.div`
   align-self: center;
   flex-grow: 1;
   overflow-y: auto;
-  ::-webkit-scrollbar {
-  display: none;
-  }
-  -ms-overflow-style: none;
+
   padding-top: 4%;
   max-width: 1200px;
+   
+  ::-webkit-scrollbar {
+    width: 4px;
+    box-shadow: ${theme.effects.shadow};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background:${theme.colors.fontColorGray};
+    transition: all 1s ease;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background:${theme.colors.detailColor};  
+    box-shadow: ${theme.effects.shadow};
+  }
 `;
 
 const Layout = ({children}) => (

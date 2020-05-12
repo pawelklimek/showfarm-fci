@@ -63,6 +63,7 @@ const MenuItem = styled.div`
 
   &:hover {
       color: ${theme.colors.fontColorGray};
+      text-shadow: ${theme.effects.shadow};
   }
 
   &:hover::before {
