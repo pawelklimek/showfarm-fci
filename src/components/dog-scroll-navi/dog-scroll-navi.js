@@ -4,8 +4,6 @@ import {theme} from "../../../static/layout/theme"
 import scrollTo from "gatsby-plugin-smoothscroll";
 import {HoverAnimationStyle} from "../animation/animation";
 
-const active = "active";
-
 const DogScrollMenu = styled(HoverAnimationStyle)`
   display:none;
  
@@ -63,6 +61,7 @@ const MenuItem = styled.div`
 
   &:hover {
       color: ${theme.colors.fontColorGray};
+      text-shadow: ${theme.effects.shadow};
   }
 
   &:hover::before {
@@ -74,18 +73,18 @@ const DogScrollNavi = () => {
     return (
         <DogScrollMenu showDelay={0.2}>
             <Menu>{"Miniaturowy Owczarek Amerykański"}</Menu>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#joy')}>Joy</MenuItem>
+            <MenuItem onClick={() => scrollTo('#joy')}>Joy</MenuItem>
             <Menu>{"Owczarek Australijski"}</Menu>
             <Menu>Suki:</Menu>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#dora')}>Dora</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#mora')}>Mora</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#abi')}>Abi</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#jaga')}>Jaga</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#dakota')}>Dakota</MenuItem>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#ruby')}>Ruby</MenuItem>
+            <MenuItem onClick={() => scrollTo('#dora')}>Dora</MenuItem>
+            <MenuItem onClick={() => scrollTo('#maizy')}>Maizy</MenuItem>
+            <MenuItem onClick={() => scrollTo('#mora')}>Mora</MenuItem>
+            <MenuItem onClick={() => scrollTo('#abi')}>Abi</MenuItem>
+            <MenuItem onClick={() => scrollTo('#jaga')}>Jaga</MenuItem>
+            <MenuItem onClick={() => scrollTo('#dakota')}>Dakota</MenuItem>
+            <MenuItem onClick={() => scrollTo('#ruby')}>Ruby</MenuItem>
             <Menu>Reproduktor:</Menu>
-            <MenuItem activeClassName={active} onClick={() => scrollTo('#brag')}>Brag</MenuItem>
+            <MenuItem  onClick={() => scrollTo('#brag')}>Brag</MenuItem>
         </DogScrollMenu>
     )
 };

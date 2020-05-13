@@ -1,13 +1,13 @@
-import React from "react"
-import Layout from "static/layout/layout"
+import React from "react";
+import Layout from "static/layout/layout";
 import styled from "styled-components";
-import bigImg from "static/images/showfarm/big-img.jpg"
-import topImg from "static/images/showfarm/dogs.jpg"
-import certificationFCI from "static/images/showfarm/FCI.png"
-import certificationZK from "static/images/showfarm/ZK.png"
-import CardFourParts from "../components/cards/cardFourParts";
-import {theme} from "../../static/layout/theme";
-import {HoverAnimationStyle} from "../components/animation/animation";
+import bigImg from "static/images/showfarm/big-img.jpg";
+import topImg from "static/images/showfarm/dogs.jpg";
+import certificationFCI from "static/images/showfarm/FCI.png";
+import certificationZK from "static/images/showfarm/ZK.png";
+import CardFourParts from "src/components/cards/cardFourParts";
+import { theme } from "static/layout/theme";
+import { HoverAnimationStyle } from "src/components/animation/animation";
 
 const PageContent = styled.div`
   flex: 1;

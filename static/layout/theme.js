@@ -9,11 +9,6 @@ export const colors = {
     backgroundColor: '#f2f2f2',
     mediumGray: '#888589',
     fontColorGray: '#333f4c',
-    color1: '#c7bab8',
-    color2: '#d5a482',
-    color3: '#592E21',
-    color4: '#734b4b',
-    color5: '#684D45',
 };
 
 export const effects = {
@@ -28,10 +23,6 @@ export const effects = {
 export const theme = {
     colors,
     effects,
-    font: {
-        thin: 100,
-        regular: 300
-    },
     media: {
         deviceSize
     }

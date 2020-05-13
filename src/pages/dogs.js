@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
+import styled from "styled-components";
 import Layout from "static/layout/layout";
 import CardFourParts from "src/components/cards/cardFourParts";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
-import styled from "styled-components";
 
 const DogCardWrapper = styled.div`  
   display: flex;

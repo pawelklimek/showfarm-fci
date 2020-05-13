@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
 import Layout from "static/layout/layout";
 import Separator from "src/components/separator/separator"
-import {theme} from "../../static/layout/theme";
-import {HoverAnimationStyle} from "../components/animation/animation";
+import {theme} from "static/layout/theme";
+import {HoverAnimationStyle} from "src/components/animation/animation";
 
 const Header = styled.div`
   color: ${theme.colors.fontColorGray};
@@ -43,20 +43,20 @@ const ContactLink = styled.a`
     }
 `;
 
-const ContentWrapper = styled.div`
+const CardWrapper = styled.div`
 flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
 
-padding: 1rem;
+padding: 0 1rem;
 height: 100%;
 `;
 
 const ContactPage = () => {
     return (
             <Layout>
-                <ContentWrapper>
+                <CardWrapper>
                     <Card showDelay={0.2}>
                         <Header>KONTAKT</Header>
                         <Separator color={theme.colors.detailColor}/>
@@ -70,7 +70,7 @@ const ContactPage = () => {
                         <br/>
                         <Contact>Poznań</Contact>
                     </Card>
-                </ContentWrapper>
+                </CardWrapper>
             </Layout>
     )
 };

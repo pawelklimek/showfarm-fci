@@ -5,7 +5,7 @@ import {theme} from "static/layout/theme";
 import Separator from "src/components/separator/separator";
 import CardTwoParts from "src/components/cards/cardTwoParts";
 import imageUrl from "static/images/puppies/puppy-theme.jpg";
-import {HoverAnimationStyle} from "../components/animation/animation";
+import {HoverAnimationStyle} from "src/components/animation/animation";
 
 const DivTop = styled(HoverAnimationStyle)`
   flex: 1;
