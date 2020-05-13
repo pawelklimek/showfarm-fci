@@ -3,6 +3,7 @@ import styled, {createGlobalStyle, ThemeProvider} from "styled-components"
 import {theme} from "./theme";
 import Menu from "../../src/components/menu/menu";
 import Footer from "../../src/components/footer/footer";
+import MetaData from "../../src/components/meta-data/meta-data";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -46,6 +47,7 @@ const Content = styled.div`
 
 const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
+        <MetaData/>
         <LayoutWrapper>
             <GlobalStyle/>
             <Menu/>
