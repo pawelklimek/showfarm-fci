@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "static/layout/layout";
 import Separator from "src/components/separator/separator"
+import image from "static/images/contact/contact-1.jpg"
 import {theme} from "static/layout/theme";
 import {HoverAnimationStyle} from "src/components/animation/animation";
 
@@ -50,28 +51,47 @@ justify-content: center;
 align-items: center;
 
 padding: 0 1rem;
-height: 100%;
+`;
+
+const ImageWrapper = styled(HoverAnimationStyle)`  
+  padding: 1rem;
+
+`;
+
+const BigImg = styled.div`  
+  flex: 0 0 100%;
+  height: 45vh;
+  padding: 1rem;
+
+  background-position: 50% 50%;
+  background-image: url(${({imgUrl}) => imgUrl});
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: ${theme.effects.shadow};
 `;
 
 const ContactPage = () => {
     return (
-            <Layout>
-                <CardWrapper>
-                    <Card showDelay={0.2}>
-                        <Header>KONTAKT</Header>
-                        <Separator color={theme.colors.detailColor}/>
-                        <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
-                        <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów.</Contact>
-                        <br/>
-                        <Contact>Założycielka hodowli: Karolina Klimek</Contact>
-                        <Contact as={'a'} href="mailto:showfarm.kennel@gmail.com">showfarm.kennel@gmail.com</Contact>
-                        <Contact>+48 509 354 704</Contact>
-                        <ContactLink href="https://www.facebook.com/showfarm.kennel">Facebook</ContactLink>
-                        <br/>
-                        <Contact>Poznań</Contact>
-                    </Card>
-                </CardWrapper>
-            </Layout>
+        <Layout>
+            <ImageWrapper  showDelay={0.2}>
+                <BigImg imgUrl={image}/>
+            </ImageWrapper>
+            <CardWrapper>
+                <Card showDelay={0.4}>
+                    <Header>KONTAKT</Header>
+                    <Separator color={theme.colors.detailColor}/>
+                    <Contact>Serdecznie zapraszamy do kontaktu!</Contact>
+                    <Contact> Zawsze chętnie udzielimy wszelakich informacji na temat naszych psów.</Contact>
+                    <br/>
+                    <Contact>Założycielka hodowli: Karolina Klimek</Contact>
+                    <Contact as={'a'} href="mailto:showfarm.kennel@gmail.com">showfarm.kennel@gmail.com</Contact>
+                    <Contact>+48 509 354 704</Contact>
+                    <ContactLink href="https://www.facebook.com/showfarm.kennel">Facebook</ContactLink>
+                    <br/>
+                    <Contact>Poznań</Contact>
+                </Card>
+            </CardWrapper>
+        </Layout>
     )
 };
 

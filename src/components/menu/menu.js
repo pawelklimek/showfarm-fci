@@ -35,6 +35,7 @@ const MenuItem = styled.div`
   text-shadow: ${theme.effects.shadow};
 
   transition: transform 0.3s ease-in-out;
+  user-select: none;
 
   color: ${theme.colors.fontColorGray};
   &:before {
