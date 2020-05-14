@@ -73,7 +73,7 @@ const PuppiesPage = () => {
                 <DivTop showDelay={0.1}>
                     <CardTwoParts
                         title={'MIOT'}
-                        subTitle={'Pod koniec lutego urodził nam się cudowny miot owczarków australijskich po naszej kochanej Jadze i przepięknym Bolsie! Urodziło się 5 szczeniąt - 2 suczki i 3 chłopców. Wszystkie szczeniaki w umaszczeniu blue merle.'}
+                        subTitle={'Najbliższy miot będzie na przełomie zima/wiosna 2021! Jeśli jesteś zainteresowany szczeniakiem z naszej hodowli - zadzwoń lub napisz.'}
                         imgUrl={imageUrl}/>
                 </DivTop>
                 <BlockWrapper>
