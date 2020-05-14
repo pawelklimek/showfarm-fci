@@ -8,6 +8,7 @@ import certificationZK from "static/images/showfarm/ZK.png";
 import CardFourParts from "src/components/cards/cardFourParts";
 import { theme } from "static/layout/theme";
 import { HoverAnimationStyle } from "src/components/animation/animation";
+import MetaData from "../components/meta-data/meta-data";
 
 const PageContent = styled.div`
   flex: 1;
@@ -66,6 +67,9 @@ const CertificationLogo = styled.div`
 const IndexPage = () => {
     return (
         <Layout>
+            <MetaData
+                title={"Showfarm | Hodowla Owczarek Australijski, Miniaturowych Owczarek Amerykański"}
+                description={"Strona rasy owczarek australijski typ amerykański i miniaturowych Owczarek amerykański"}/>
             <PageContent>
                 <Left>
                     <CertificationLogoWrapper>

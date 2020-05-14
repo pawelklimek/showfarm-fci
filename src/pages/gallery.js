@@ -23,6 +23,7 @@ import pic20 from "static/images/gallery/20.jpg";
 import Layout from "static/layout/layout";
 import {theme} from "static/layout/theme";
 import {HoverAnimationStyle} from "src/components/animation/animation";
+import MetaData from "../components/meta-data/meta-data";
 
 const ImageMenu = styled.div`
   display: flex;
@@ -85,6 +86,9 @@ class Gallery extends React.Component {
 
     render() {
         return (<Layout>
+            <MetaData
+                title={"Showfarm - Galeria"}
+                description={"Zdjęcia owczarek amerykański owczarek miniaturowy amerykański, blue merle, triple black"}/>
             <ImageMenu>
                 <Image showDelay={0.1} src={pic1} onClick={() => this.clickedValue(pic1)}/>
                 <Image showDelay={0.2} src={pic2} onClick={() => this.clickedValue(pic2)}/>

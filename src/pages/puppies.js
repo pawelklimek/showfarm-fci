@@ -6,6 +6,7 @@ import Separator from "src/components/separator/separator";
 import CardTwoParts from "src/components/cards/cardTwoParts";
 import imageUrl from "static/images/puppies/puppy-theme.jpg";
 import {HoverAnimationStyle} from "src/components/animation/animation";
+import MetaData from "../components/meta-data/meta-data";
 
 const DivTop = styled(HoverAnimationStyle)`
   flex: 1;
@@ -70,6 +71,9 @@ const PuppiesPage = () => {
     return (
         <div>
             <Layout>
+                <MetaData
+                    title={"Showfarm | Szczeniaki i miot"}
+                    description={"Na tej stronie znajdziesz informacje o szczeniakach i motach w naszej hodowli"}/>
                 <DivTop showDelay={0.1}>
                     <CardTwoParts
                         title={'MIOT'}

@@ -5,6 +5,7 @@ import Separator from "src/components/separator/separator"
 import image from "static/images/contact/contact-1.jpg"
 import {theme} from "static/layout/theme";
 import {HoverAnimationStyle} from "src/components/animation/animation";
+import MetaData from "../components/meta-data/meta-data";
 
 const Header = styled.div`
   color: ${theme.colors.fontColorGray};
@@ -60,7 +61,7 @@ const ImageWrapper = styled(HoverAnimationStyle)`
 
 const BigImg = styled.div`  
   flex: 0 0 100%;
-  height: 45vh;
+  height: 40vh;
   padding: 1rem;
 
   background-position: 50% 50%;
@@ -73,6 +74,9 @@ const BigImg = styled.div`
 const ContactPage = () => {
     return (
         <Layout>
+            <MetaData
+                title={"Showfarm | Kontakt"}
+                description={"Hodowla Karolina Klimek Showfarm FCI Poznań"}/>
             <ImageWrapper  showDelay={0.2}>
                 <BigImg imgUrl={image}/>
             </ImageWrapper>
@@ -87,8 +91,6 @@ const ContactPage = () => {
                     <Contact as={'a'} href="mailto:showfarm.kennel@gmail.com">showfarm.kennel@gmail.com</Contact>
                     <Contact>+48 509 354 704</Contact>
                     <ContactLink href="https://www.facebook.com/showfarm.kennel">Facebook</ContactLink>
-                    <br/>
-                    <Contact>Poznań</Contact>
                 </Card>
             </CardWrapper>
         </Layout>

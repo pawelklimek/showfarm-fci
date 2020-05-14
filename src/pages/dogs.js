@@ -4,6 +4,7 @@ import Layout from "static/layout/layout";
 import CardFourParts from "src/components/cards/cardFourParts";
 import {Dogs} from "static/dogs";
 import DogScrollNavi from "src/components/dog-scroll-navi/dog-scroll-navi";
+import MetaData from "../components/meta-data/meta-data";
 
 const DogCardWrapper = styled.div`  
   display: flex;
@@ -17,6 +18,9 @@ const DogsPage = () => {
     return (
         <div>
             <Layout>
+                <MetaData
+                    title={"Showfarm - Psy"}
+                    description={"Psy wystawowe owczarek australijski, oczarek miniaturowy amerykański"}/>
                 <DogCardWrapper>
                     <DogScrollNavi/>
                     <Right>

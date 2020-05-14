@@ -12,6 +12,7 @@ import cardTwoBig from "static/images/about/card-2-big.jpg";
 import cardTreeSmall from "static/images/about/card-3-small.jpg";
 import cardThreeMediumX from "static/images/about/card-3-medium.jpg";
 import cardThreeBig from "static/images/about/card-3-big.jpg";
+import MetaData from "../components/meta-data/meta-data";
 
 
 const AboutWrapper = styled.div`  
@@ -24,6 +25,9 @@ const AboutPage = () => {
     return (
         <div>
             <Layout>
+                <MetaData
+                    title={"Showfarm | O nas - frisbee, dogoterapia, pasterstwo"}
+                    description={"Psy od dogoterapii, kochają frisbee czy agility oraz posadają instynkt pasterski"}/>
                 <AboutWrapper>
                     <CardTreeParts
                         showDelay={0.2}
