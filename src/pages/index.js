@@ -68,7 +68,7 @@ const IndexPage = () => {
     return (
         <Layout>
             <MetaData
-                title={"Showfarm | Hodowla Owczarek Australijski, Miniaturowych Owczarek Amerykański"}
+                title={"Showfarm | Hodowla  Owczarek Australijski, Miniaturowych Owczarek Amerykański"}
                 description={"Strona rasy owczarek australijski typ amerykański i miniaturowych Owczarek amerykański"}/>
             <PageContent>
                 <Left>

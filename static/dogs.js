@@ -45,9 +45,12 @@ export const Dogs = {
             'Umaszczenie: red tri\n' +
             'HD i ED wkrótce\n' +
             'Badania:\n' +
-            'MDR1 wkrótce\n' +
+            'MDR1: +/+\n' +
             'CEA - clear\n' +
-            'PRA - wkrótce\n' +
+            'PRA - clear\n' +
+            'CMR1 - clear\n' +
+            'NCL6 - clear\n' +
+            'DM - clear\n' +
             'HSF4 - clear\n' +
             'Uzębienie pełne, zgryz nożycowy\n' +
             'Właściciel: Karolina Klimek',
@@ -63,8 +66,11 @@ export const Dogs = {
             'Umaszczenie: black tri\n' +
             'HD i ED wkrótce\n' +
             'Badania:\n' +
-            'MDR1 wkrótce\n' +
-            'CEA wkrótce\n' +
+            'MDR1: +/+\n' +
+            'CEA - carrier\n'+
+            'CMR1 - clear\n' +
+            'NCL6 - clear\n' +
+            'DM - clear\n' +
             'PRA - clear \n' +
             'HSF4 - clear\n' +
             'Uzębienie pełne, zgryz nożycowy\n' +
@@ -80,13 +86,16 @@ export const Dogs = {
             'Ur. 11.04.2017\n' +
             'Umaszczenie: Black tri\n' +
             'HD i ED - wkróce\n' +
-            'Badania\n' +
-            'MDR1 - wkrótce\n' +
+            'Badania:\n' +
+            'MDR1: +/-\n' +
+            'CMR1 - clear\n' +
+            'NCL6 - clear\n' +
+            'DM - carrier\n' +
             'CEA - clear\n' +
             'PRA - clear \n' +
             'HSF4 - clear \n' +
             'Uzębienie pełne, zgryz nożycowy\n' +
-            'Właściciel: Magdalena Sołtysiak',
+            'Właściciel: Karolina Klimek i Magdalena Sołtysiak',
         topImage: Dakota1,
         bottomImg: Dakota2
     },
@@ -99,7 +108,7 @@ export const Dogs = {
             'Umaszczenie: blue merle\n' +
             'HD: A/A  ED: 0/0\n' +
             'Badania:\n' +
-            'MDR1 +/-\n' +
+            'MDR1: +/-\n' +
             'CEA - clear\n' +
             'PRA - clear\n' +
             'HSF4 - clear\n' +
@@ -117,12 +126,15 @@ export const Dogs = {
             'Umaszczenie: blue merle\n' +
             'HD: A/A  ED: 0/0\n' +
             'Badania\n' +
-            'MDR1 +/-\n' +
+            'MDR1: +/-\n' +
             'CEA - clear\n' +
             'PRA - clear\n' +
+            'CMR1 - clear\n' +
+            'NCL6 - clear\n' +
+            'DM - clear\n' +
             'HSF4 - clear\n' +
             'Uzębienie pełne, zgryz nożycowy\n' +
-            'Właściciel : Magdalena Sołtysiak i Karolina Klimek',
+            'Właściciel: Karolina Klimek i Magdalena Sołtysiak',
         topImage: Jaga1,
         bottomImg: Jaga2
     },
@@ -135,9 +147,12 @@ export const Dogs = {
             'Umaszczenie: blue merle\n' +
             'HD: A/A   ED: 0/0 \n' +
             'Badania: \n' +
-            'MDR1 +/+\n' +
+            'MDR1: +/+\n' +
             'CEA - clear\n' +
             'PRA - clear\n' +
+            'CMR1 - clear\n' +
+            'NCL6 - clear\n' +
+            'DM - clear\n' +
             'HSF4 - clear  \n' +
             'Uzębienie pełne, zgryz nożycowy\n' +
             'Właściciel: Karolina Klimek',
@@ -153,7 +168,7 @@ export const Dogs = {
             'Ur. 08.02.2010\n' +
             'Umaszczenie: blue merle\n' +
             'HD: A/A   ED: 1/1\n' +
-            'MDR +/+ \n' +
+            'MDR: +/+ \n' +
             'CEA - clear\n' +
             'PRA - clear\n' +
             'HSF4 - clear\n' +
@@ -172,7 +187,7 @@ export const Dogs = {
             'Umaszczenie: black tri\n' +
             'HD: A/A   ED: 0/0  OCD: clear\n' +
             'Badania:\n' +
-            'MDR1 +/-\n' +
+            'MDR1: +/-\n' +
             'CEA - carrier \n' +
             'PRA - clear\n' +
             'HSF4 - clear\n' +

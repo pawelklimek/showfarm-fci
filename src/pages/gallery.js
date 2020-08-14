@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import pic0 from "static/images/gallery/0.jpg"
 import pic1 from "static/images/gallery/1.jpg";
 import pic2 from "static/images/gallery/2.jpg";
 import pic3 from "static/images/gallery/3.jpg";
@@ -20,6 +21,11 @@ import pic17 from "static/images/gallery/17.jpg";
 import pic18 from "static/images/gallery/18.jpg";
 import pic19 from "static/images/gallery/19.jpg";
 import pic20 from "static/images/gallery/20.jpg";
+import pic21 from "static/images/gallery/21.jpg";
+import pic22 from "static/images/gallery/22.jpg";
+import pic23 from "static/images/gallery/23.jpg";
+import pic24 from "static/images/gallery/24.jpg";
+
 import Layout from "static/layout/layout";
 import {theme} from "static/layout/theme";
 import {HoverAnimationStyle} from "src/components/animation/animation";
@@ -76,7 +82,6 @@ const ImageSelected = styled(HoverAnimationStyle)`
   }
 `;
 
-
 class Gallery extends React.Component {
     state = {
         selectedImage: pic1
@@ -90,6 +95,7 @@ class Gallery extends React.Component {
                 title={"Showfarm - Galeria"}
                 description={"Zdjęcia owczarek amerykański owczarek miniaturowy amerykański, blue merle, triple black"}/>
             <ImageMenu>
+                <Image showDelay={0.0} src={pic0} onClick={() => this.clickedValue(pic0)}/>
                 <Image showDelay={0.1} src={pic1} onClick={() => this.clickedValue(pic1)}/>
                 <Image showDelay={0.2} src={pic2} onClick={() => this.clickedValue(pic2)}/>
                 <Image showDelay={0.3} src={pic3} onClick={() => this.clickedValue(pic3)}/>
@@ -110,6 +116,10 @@ class Gallery extends React.Component {
                 <Image showDelay={1.7} src={pic18} onClick={() => this.clickedValue(pic18)}/>
                 <Image showDelay={1.8} src={pic19} onClick={() => this.clickedValue(pic19)}/>
                 <Image showDelay={1.9} src={pic20} onClick={() => this.clickedValue(pic20)}/>
+                <Image showDelay={2.0} src={pic21} onClick={() => this.clickedValue(pic21)}/>
+                <Image showDelay={2.1} src={pic22} onClick={() => this.clickedValue(pic22)}/>
+                <Image showDelay={2.2} src={pic23} onClick={() => this.clickedValue(pic23)}/>
+                <Image showDelay={2.3} src={pic24} onClick={() => this.clickedValue(pic24)}/>
             </ImageMenu>
             <ImageSelected showDelay={2} src={this.state.selectedImage}/>
         </Layout>)
